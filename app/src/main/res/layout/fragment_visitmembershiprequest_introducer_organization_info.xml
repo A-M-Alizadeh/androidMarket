@@ -1,0 +1,119 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.aalizade.mbazar_base_app.fragments.visimembershiprequest_frags.VisitMembershipRequest_IntroducerOrganizationInfoFragment"
+    android:layoutDirection="rtl"
+    >
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="50dp"
+        android:layout_margin="@dimen/default_margin"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:layout_margin="@dimen/standard_margin"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text="کلمه کاربری معرف :"
+                android:textColor="@color/primary_text_black"
+                android:textSize="@dimen/small_font_size" />
+            <TextView
+                android:id="@+id/member_info_contact_introducer_username_TV_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/primary_text_black"
+                android:textSize="@dimen/small_font_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:layout_margin="@dimen/standard_margin"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text="کد ملی معرف :"
+                android:textColor="@color/primary_text_black"
+                android:textSize="@dimen/small_font_size" />
+            <TextView
+                android:id="@+id/member_info_contact_introducer_nationalCode_TV_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/primary_text_black"
+                android:textSize="@dimen/small_font_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:layout_margin="@dimen/standard_margin"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text="نام معرف :"
+                android:textColor="@color/primary_text_black"
+                android:textSize="@dimen/small_font_size" />
+            <TextView
+                android:id="@+id/member_info_contact_introducer_name_TV_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/primary_text_black"
+                android:textSize="@dimen/small_font_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:layout_margin="@dimen/standard_margin"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text="نام خانوادگی معرف :"
+                android:textColor="@color/primary_text_black"
+                android:textSize="@dimen/small_font_size" />
+            <TextView
+                android:id="@+id/member_info_contact_introducer_lastname_TV_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/primary_text_black"
+                android:textSize="@dimen/small_font_size" />
+        </LinearLayout>
+
+    </LinearLayout>
+</FrameLayout>

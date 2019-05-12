@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/distance_4dp"
+    android:elevation="@dimen/distance_4dp"
+    android:layoutDirection="rtl"
+    app:cardCornerRadius="@dimen/standard_least_distance"
+    app:cardElevation="@dimen/distance_4dp"
+    tools:targetApi="lollipop">
+
+    <RelativeLayout
+        android:id="@+id/positive_negative_back_layout_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/distance_4dp"
+        android:background="@color/light_green">
+
+        <TextView
+            android:id="@+id/action_type_title_txt_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_margin="@dimen/standard_least_distance"
+            android:text="نوع فعالیت"
+            android:textColor="@color/secondary_text_gray"
+            android:textSize="@dimen/normal_font_size" />
+
+        <TextView
+            android:id="@+id/action_type_txt_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/action_type_title_txt_id"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="@dimen/standard_least_distance"
+            android:text="شارژ اعتبار از طریق درگاه بانکی"
+            android:textColor="@color/primary_text_black"
+            android:textSize="@dimen/large_font_size"
+            android:textStyle="bold" />
+
+        <View
+            android:id="@id/divider_1_id"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/action_type_title_txt_id"
+            android:layout_marginBottom="@dimen/standard_least_distance"
+            android:layout_marginLeft="@dimen/distance_4dp"
+            android:layout_marginRight="@dimen/distance_4dp"
+            android:layout_marginTop="@dimen/standard_least_distance"
+            android:background="@color/divider" />
+
+
+        <!--//secondline-->
+        <TextView
+            android:id="@+id/action_date_title_txt_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/divider_1_id"
+            android:layout_margin="@dimen/standard_least_distance"
+            android:text="تاریخ عملیات اعتبار"
+            android:textColor="@color/secondary_text_gray"
+            android:textSize="@dimen/normal_font_size" />
+
+        <TextView
+            android:id="@+id/action_date_txt_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/action_date_title_txt_id"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="@dimen/standard_least_distance"
+            android:text="1396/09/01"
+            android:textColor="@color/primary_text_black"
+            android:textSize="@dimen/large_font_size"
+            android:textStyle="bold" />
+
+        <View
+            android:id="@id/divider_2_id"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/action_date_title_txt_id"
+            android:layout_marginBottom="@dimen/standard_least_distance"
+            android:layout_marginLeft="@dimen/distance_4dp"
+            android:layout_marginRight="@dimen/distance_4dp"
+            android:layout_marginTop="@dimen/standard_least_distance"
+            android:background="@color/divider" />
+
+        <!--//third line-->
+
+        <TextView
+            android:id="@+id/action_transaction_money_title_txt_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/divider_2_id"
+            android:layout_margin="@dimen/standard_least_distance"
+            android:text="مبلغ عملیات اعتبار"
+            android:textColor="@color/secondary_text_gray"
+            android:textSize="@dimen/normal_font_size" />
+
+        <TextView
+            android:id="@+id/action_transaction_money_txt_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/action_transaction_money_title_txt_id"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="@dimen/standard_least_distance"
+            android:text="3000000"
+            android:textColor="@color/primary_text_black"
+            android:textSize="@dimen/large_font_size"
+            android:textStyle="bold" />
+
+        <View
+            android:id="@id/divider_3_id"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/action_transaction_money_title_txt_id"
+            android:layout_marginBottom="@dimen/standard_least_distance"
+            android:layout_marginLeft="@dimen/distance_4dp"
+            android:layout_marginRight="@dimen/distance_4dp"
+            android:layout_marginTop="@dimen/standard_least_distance"
+            android:background="@color/divider" />
+
+        <!--//fourth line-->
+
+        <TextView
+            android:id="@+id/remaining_money_title_txt_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/divider_3_id"
+            android:layout_margin="@dimen/standard_least_distance"
+            android:text="مانده اعتبار"
+            android:textColor="@color/secondary_text_gray"
+            android:textSize="@dimen/normal_font_size" />
+
+        <TextView
+            android:id="@+id/remaining_money_txt_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/remaining_money_title_txt_id"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="@dimen/standard_least_distance"
+            android:text="3000000"
+            android:textColor="@color/primary_text_black"
+            android:textSize="@dimen/large_font_size"
+            android:textStyle="bold" />
+
+        <View
+            android:id="@id/divider_4_id"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/remaining_money_title_txt_id"
+            android:layout_marginBottom="@dimen/standard_least_distance"
+            android:layout_marginLeft="@dimen/distance_4dp"
+            android:layout_marginRight="@dimen/distance_4dp"
+            android:layout_marginTop="@dimen/standard_least_distance"
+            android:background="@color/divider" />
+
+        <!--//fifth line-->
+
+        <TextView
+            android:id="@+id/return_date_title_txt_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/divider_4_id"
+            android:layout_margin="@dimen/standard_least_distance"
+            android:text="تاریخ واریز/عودت به حساب قبض"
+            android:textColor="@color/secondary_text_gray"
+            android:textSize="@dimen/normal_font_size" />
+
+        <TextView
+            android:id="@+id/return_date_txt_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/return_date_title_txt_id"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="@dimen/standard_least_distance"
+            android:text="1396/09/01"
+            android:textColor="@color/primary_text_black"
+            android:textSize="@dimen/large_font_size"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

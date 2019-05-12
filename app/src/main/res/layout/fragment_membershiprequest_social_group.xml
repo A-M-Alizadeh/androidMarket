@@ -1,0 +1,122 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="rtl"
+    android:orientation="vertical"
+    tools:context="com.example.aalizade.mbazar_base_app.fragments.membershiprequest_frags.MembershipRequest_SocialGroupFragment"
+    android:id="@+id/member_register_social_group_frame_id"
+    >
+    <include
+        android:id="@+id/progress_wrapper_id"
+        layout="@layout/global_progressbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/standard_margin"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text="گرایش :"
+                android:textColor="@color/secondary_text_gray"
+                android:textSize="@dimen/small_font_size" />
+
+            <Spinner
+                android:id="@+id/social_group_field_spinner_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="text"
+                android:textSize="@dimen/small_font_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/standard_margin"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text="نام کانون :"
+                android:textColor="@color/secondary_text_gray"
+                android:textSize="@dimen/small_font_size" />
+
+            <Spinner
+                android:id="@+id/SocialGroupName_spinner_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="text"
+                android:textSize="@dimen/small_font_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/standard_margin"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text="کد کانون :"
+                android:textColor="@color/secondary_text_gray"
+                android:textSize="@dimen/small_font_size" />
+
+            <EditText
+                android:id="@+id/SocialGroupCode_ET_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="کد کانون"
+                android:enabled="false"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            >
+            <Button
+                android:id="@+id/step_back_btn_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/buy_button_style"
+                android:text="قبلی"
+                android:layout_margin="1dp"
+                />
+            <Button
+                android:id="@+id/step_done_btn_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/buy_button_style"
+                android:text="بعدی"
+                android:layout_margin="1dp"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>
+

@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:layout_margin="@dimen/distance_4dp"
+    android:elevation="@dimen/distance_4dp"
+    android:layoutDirection="rtl"
+    app:cardCornerRadius="@dimen/standard_least_distance"
+    app:cardElevation="@dimen/distance_4dp"
+    tools:targetApi="lollipop">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/back_shape_layout_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/distance_4dp">
+
+            <TextView
+                android:id="@+id/credit_type_title_txt_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/standard_least_distance"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:text="نوع اعتبار"
+                android:textColor="@color/secondary_text_gray"
+                android:textSize="@dimen/normal_font_size"
+                />
+
+            <TextView
+                android:id="@+id/credit_type_txt_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/standard_least_distance"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/credit_type_title_txt_id"
+                android:text="اهدایی"
+                android:textColor="@color/primary_text_black"
+                android:textSize="@dimen/large_font_size"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/credit_money_transactiontxt_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/standard_least_distance"
+                android:layout_marginLeft="@dimen/standard_least_distance"
+                android:layout_marginBottom="@dimen/standard_least_distance"
+                android:layout_marginRight="@dimen/standard_margin"
+                android:layout_toRightOf="@+id/tooman_txt_id"
+                android:text="2000000"
+                android:textColor="@color/primary_text_black"
+                android:textSize="@dimen/large_font_size"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:id="@+id/tooman_txt_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="@dimen/standard_least_distance"
+                android:text="تومان"
+                android:textColor="@color/secondary_text_gray"
+                android:textSize="@dimen/normal_font_size"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/date_layout_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_below="@+id/back_shape_layout_id"
+            android:layout_margin="@dimen/distance_4dp">
+
+            <TextView
+                android:id="@+id/date_title_txt_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/standard_least_distance"
+                android:layout_alignParentRight="true"
+                android:text="آخرین تاریخ عملیات"
+                android:textColor="@color/secondary_text_gray"
+                android:textSize="@dimen/normal_font_size"
+                android:layout_centerVertical="true"/>
+
+            <TextView
+                android:id="@+id/date_txt_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_margin="@dimen/standard_least_distance"
+                android:text="1397/12/15"
+                android:textColor="@color/primary_text_black"
+                android:textSize="@dimen/normal_font_size"
+                android:layout_centerVertical="true"/>
+            <!--//line one-->
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_below="@+id/date_layout_id"
+            android:layout_marginBottom="@dimen/standard_least_distance"
+            >
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:id="@+id/visit_detail_in_new_page_layer_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/standard_least_distance"
+                android:layout_marginLeft="@dimen/standard_least_distance"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:background="@drawable/textview_border">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/visit_in_new_page_orange_ic" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/standard_least_distance"
+                    android:text="جزئیات"
+                    android:textColor="@color/primary_text_black"
+                    android:textSize="@dimen/small_font_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:id="@+id/visit_turn_over_layer_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/standard_least_distance"
+                android:layout_marginLeft="@dimen/standard_least_distance"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:background="@drawable/textview_border">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/review_time_ic" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/standard_least_distance"
+                    android:text="گردش"
+                    android:textColor="@color/primary_text_black"
+                    android:textSize="@dimen/small_font_size" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="▼"/>-->
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

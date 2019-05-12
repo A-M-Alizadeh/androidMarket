@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/progress_wrapper_id"
+        layout="@layout/global_progressbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/outer_scroll_view_id"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:animateLayoutChanges="true"
+        android:layoutDirection="rtl"
+        android:nestedScrollingEnabled="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/default_margin"
+            android:orientation="vertical"
+            android:paddingBottom="60dp">
+
+            <LinearLayout
+                android:id="@+id/firsPartLayout_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="جنسیت :"
+                        android:textSize="@dimen/normal_font_size" />
+
+                    <RadioGroup
+                        android:id="@+id/gender_radio_group_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/male_gender_radio_btn_id"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            android:text="مرد" />
+
+                        <RadioButton
+                            android:id="@+id/female_gender_radio_btn_id"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="زن" />
+                    </RadioGroup>
+
+                </LinearLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/signin_name_tiet_layout_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/standard_margin"
+                    android:layout_marginTop="@dimen/standard_margin">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/signin_tietname_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableRight="@drawable/username_gray_ic"
+                        android:hint="نام را وارد کنید"
+                        android:inputType="text"
+                        android:maxLength="40"
+                        android:textSize="@dimen/small_font_size" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/signin_lastname_tiet_layout_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/standard_margin"
+                    android:layout_marginTop="@dimen/standard_margin">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/signin_tietlastname_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableRight="@drawable/username_gray_ic"
+                        android:hint="نام خانوادگی را وارد کنید"
+                        android:inputType="text"
+                        android:maxLength="40"
+                        android:textSize="@dimen/small_font_size" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/signin_username_tiet_layout_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/standard_margin"
+                    android:layout_marginTop="@dimen/standard_margin">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/signin_tietusername_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableRight="@drawable/username_gray_ic"
+                        android:hint="کلمه کاربری (پست الکترونیکی یا شماره موبایل)"
+                        android:inputType="text"
+                        android:maxLength="40"
+                        android:textSize="@dimen/small_font_size" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/signin_pass_tiet_layout_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/standard_margin"
+                    android:layout_marginTop="@dimen/standard_margin">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/signin_tietpassword_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableRight="@drawable/password_lock_gray_ic"
+                        android:hint="رمز عبور"
+                        android:inputType="text"
+                        android:maxLength="40"
+
+                        android:textSize="@dimen/small_font_size" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/signin_repeatpass_tiet_layout_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/standard_margin"
+                    android:layout_marginTop="@dimen/standard_margin">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/signin_tietrepeatpass_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableRight="@drawable/password_lock_gray_ic"
+                        android:hint="تکرار رمز عبور"
+                        android:inputType="text"
+                        android:maxLength="40"
+                        android:textSize="@dimen/small_font_size" />
+                </android.support.design.widget.TextInputLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="تمایل به دریافت پیامک :"
+                        android:textSize="@dimen/normal_font_size" />
+
+                    <RadioGroup
+                        android:id="@+id/receive_sms_radio_group_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/receive_sms_radio_btn_id"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            android:text="بله" />
+
+                        <RadioButton
+                            android:id="@+id/not_receive_sms_radio_btn_id"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="خیر" />
+                    </RadioGroup>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="قوانین و مقررات:"
+                    android:textColor="@color/primary_text_black"
+                    android:textSize="@dimen/normal_font_size" />
+
+                <TextView
+                    android:id="@+id/rules_txt_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/default_margin"
+                    android:background="@drawable/textview_border"
+                    android:maxLines="4"
+                    android:padding="@dimen/standard_margin"
+                    android:scrollbars="vertical"
+                    android:singleLine="false"
+                    android:text="@string/explanation_text"
+                    android:textColor="@color/secondary_text_gray" />
+
+                <TextView
+                    android:id="@+id/all_rules_Tv_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/default_margin"
+                    android:background="@color/divider"
+                    android:gravity="center"
+                    android:text="مشاهده کامل قوانین و مقررات" />
+
+                <CheckBox
+                    android:id="@+id/read_rules_checkbox_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layoutDirection="rtl"
+                    android:text="شرایط و قوانین را مطالعه نموده و با کلیه موارد آن موافق هستم" />
+                <!--//buy_btn-->
+                <Button
+                    android:id="@+id/sign_up__btn_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/standard_margin"
+                    android:layout_marginTop="@dimen/standard_margin"
+                    android:layout_weight="1"
+                    android:background="@drawable/buy_button_style"
+                    android:enabled="false"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:text="دریافت کد تایید"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/normal_font_size" />
+                <!--//buy_btn-->
+            </LinearLayout>
+
+            <!--//verification code-->
+            <LinearLayout
+                android:id="@+id/gonna_receive_verify_code_layout_id"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/signin_verificationcode_tiet_layout_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/standard_margin"
+                    android:layout_marginTop="@dimen/standard_margin"
+                    android:enabled="true">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/signin_verificationcodeTiet_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:enabled="false"
+                        android:gravity="center"
+                        android:hint="کد تایید دریافتی را وارد کنید"
+                        android:inputType="numberDecimal"
+                        android:maxLength="4"
+                        android:textSize="@dimen/large_font_size" />
+                </android.support.design.widget.TextInputLayout>
+
+                <Button
+                    android:id="@+id/final_signup_verify_btn_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/standard_margin"
+                    android:layout_marginTop="@dimen/standard_margin"
+                    android:layout_weight="1"
+                    android:background="@drawable/buy_button_style"
+                    android:enabled="false"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:gravity="center"
+                    android:text="تکمیل ثبت نام"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/normal_font_size" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="در صورتی که کد تایید را دریافت نکرده اید !"
+                    android:textColor="@color/primary_text_black"
+                    android:textSize="@dimen/small_font_size"
+                    android:layout_marginTop="@dimen/default_margin"
+                    />
+
+                <Button
+                    android:id="@+id/signup_sendCodeAgain_btn_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/standard_margin"
+                    android:layout_marginTop="@dimen/standard_margin"
+                    android:layout_weight="1"
+                    android:background="@drawable/buy_button_style"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:gravity="center"
+                    android:text="ارسال مجدد"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/normal_font_size" />
+                <!--<TextView-->
+                <!--android:id="@+id/countDownTv_id"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="05 : 00"-->
+                <!--android:layout_weight="1"-->
+                <!--android:gravity="center"-->
+                <!--android:textColor="@color/primary_text_black"-->
+                <!--android:textSize="@dimen/small_font_size"-->
+                <!--/>-->
+            </LinearLayout>
+            <!--//verification code-->
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgrnd"
+    android:tag="frag3"
+    tools:context="com.example.aalizade.mbazar_base_app.fragments.checkout_frags.CheckOutPreviewAndPayFragment">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/beforehome_mother_drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:animateLayoutChanges="true"
+        android:background="@color/backgrnd"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layoutDirection="rtl">
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/app_bar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+            <!--<android.support.v7.widget.Toolbar-->
+            <!--android:id="@+id/shopping_card_activity_toolbar"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="?attr/actionBarSize"-->
+            <!--app:layout_scrollFlags="scroll|enterAlways">-->
+
+            <!--</android.support.v7.widget.Toolbar>-->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="#DADFE1"
+                app:layout_scrollFlags="scroll|enterAlways">
+
+                <TextView
+                    android:id="@+id/products_total_payment_txt_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/default_margin"
+                    android:maxLines="1"
+                    android:text="جمع با مالیات (6) کالا"
+                    android:textColor="@color/primary_text_black"
+                    android:textSize="@dimen/small_font_size" />
+
+                <TextView
+                    android:id="@+id/total_price_without_transport_cost_txt_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/products_total_payment_txt_id"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="@dimen/distance_4dp"
+                    android:layout_marginRight="@dimen/default_margin"
+                    android:maxLines="1"
+                    android:textColor="@color/primary_text_black"
+                    android:textSize="@dimen/small_font_size" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/products_total_payment_txt_id"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="@dimen/default_margin"
+                    android:layout_marginRight="@dimen/distance_4dp"
+                    android:layout_toLeftOf="@+id/total_price_without_transport_cost_txt_id"
+                    android:maxLines="1"
+                    android:text="تومان"
+                    android:textColor="@color/primary_text_black"
+                    android:textSize="@dimen/small_font_size" />
+
+                <TextView
+                    android:id="@+id/transportation_total_payment_txt_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/products_total_payment_txt_id"
+                    android:layout_marginRight="@dimen/default_margin"
+                    android:maxLines="1"
+                    android:text="جمع هزینه حمل"
+                    android:textColor="@color/primary_text_black"
+                    android:textSize="@dimen/small_font_size" />
+
+                <TextView
+                    android:id="@+id/total_transfer_title_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/transportation_total_payment_txt_id"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="@dimen/default_margin"
+                    android:layout_marginRight="@dimen/default_margin"
+                    android:maxLines="1"
+                    android:textColor="@color/primary_text_black"
+                    android:textSize="@dimen/small_font_size" />
+
+                <TextView
+                    android:id="@+id/totalTransport_price_txt_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/transportation_total_payment_txt_id"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="@dimen/distance_4dp"
+                    android:layout_marginRight="@dimen/distance_4dp"
+                    android:layout_toLeftOf="@+id/total_transfer_title_id"
+                    android:maxLines="1"
+                    android:text="تومان"
+                    android:textColor="@color/primary_text_black"
+                    android:textSize="@dimen/small_font_size" />
+
+
+                <TextView
+                    android:id="@+id/total_amount_payment_txt_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/transportation_total_payment_txt_id"
+                    android:layout_marginRight="@dimen/default_margin"
+                    android:maxLines="1"
+                    android:text="قابل پرداخت"
+                    android:textColor="@color/primary_text_black"
+                    android:textSize="@dimen/normal_font_size" />
+
+                <TextView
+                    android:id="@+id/total_price_to_pay_txt_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/total_amount_payment_txt_id"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="@dimen/distance_4dp"
+                    android:layout_marginRight="@dimen/default_margin"
+                    android:maxLines="1"
+                    android:textColor="@color/primary_text_black"
+                    android:textSize="@dimen/normal_font_size" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/total_amount_payment_txt_id"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="@dimen/default_margin"
+                    android:layout_marginRight="@dimen/distance_4dp"
+                    android:layout_toLeftOf="@+id/total_price_to_pay_txt_id"
+                    android:maxLines="1"
+                    android:text="تومان"
+                    android:textColor="@color/primary_text_black"
+                    android:textSize="@dimen/normal_font_size" />
+
+            </RelativeLayout>
+
+
+        </android.support.design.widget.AppBarLayout>
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <LinearLayout
+                android:id="@+id/linear_layout_id"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <include
+                    android:id="@+id/step_indicator_id"
+                    layout="@layout/checkout_5th_stepindicator_layer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/standard_margin" />
+
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/checkout_transport_recycler_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <ProgressBar
+                    android:id="@+id/progressbar_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/standard_margin"
+                    android:layout_gravity="center"
+                    android:visibility="visible"
+                    android:indeterminate="true"
+                    android:indeterminateTintMode="src_atop"
+                    android:indeterminateTint="@color/colorAccent"/>
+
+            </LinearLayout>
+
+        </android.support.v4.widget.NestedScrollView>
+
+    </android.support.design.widget.CoordinatorLayout>
+</FrameLayout>
+
+

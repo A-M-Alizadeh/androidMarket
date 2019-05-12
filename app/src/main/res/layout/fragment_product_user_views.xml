@@ -1,0 +1,576 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgrnd"
+    android:layoutDirection="rtl"
+    tools:context="com.example.aalizade.mbazar_base_app.fragments.ProductUserViewsFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/standard_margin"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxLength="40"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:text="ساعت مچی عقربه ای مردانه کاسیو جی شاک مدل"
+                android:textColor="@color/black"
+                android:textSize="@dimen/large_font_size" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/standard_margin"
+                    android:layout_marginRight="@dimen/standard_margin"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <!--//5 rate number-->
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/rate5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_margin="3dp"
+                            android:text="5"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/small_font_size" />
+
+                        <com.akexorcist.roundcornerprogressbar.RoundCornerProgressBar
+                            android:id="@+id/one_byone_5rate_rows_id"
+                            android:layout_width="100dp"
+                            android:layout_height="5dp"
+                            android:layout_centerInParent="true"
+                            android:gravity="center"
+                            android:layoutDirection="rtl"
+                            android:rotationY="180"
+                            app:rcBackgroundColor="@color/cardview_dark_background"
+                            app:rcBackgroundPadding="0dp"
+                            app:rcMax="5.0"
+                            app:rcProgress="3.7"
+                            app:rcProgressColor="@color/star_full_color"
+                            app:rcRadius="2dp"
+                            app:rcReverse="true"
+                            app:rcSecondaryProgress="2.5"
+                            app:rcSecondaryProgressColor="@color/cardview_dark_background" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginBottom="3dp"
+                            android:layout_marginLeft="3dp"
+                            android:layout_marginRight="@dimen/standard_margin"
+                            android:layout_marginTop="3dp"
+                            android:text="(9)"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/small_font_size" />
+                    </RelativeLayout>
+                    <!--//5 rate number-->
+                    <!--//4 rate number-->
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/rate4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_margin="3dp"
+                            android:text="4"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/small_font_size" />
+
+                        <com.akexorcist.roundcornerprogressbar.RoundCornerProgressBar
+                            android:id="@+id/one_byone_4rate_rows_id"
+                            android:layout_width="100dp"
+                            android:layout_height="5dp"
+                            android:layout_centerInParent="true"
+                            android:gravity="center"
+                            android:layoutDirection="rtl"
+                            android:rotationY="180"
+                            app:rcBackgroundColor="@color/cardview_dark_background"
+                            app:rcBackgroundPadding="0dp"
+                            app:rcMax="5.0"
+                            app:rcProgress="3.7"
+                            app:rcProgressColor="@color/star_full_color"
+                            app:rcRadius="2dp"
+                            app:rcReverse="true"
+                            app:rcSecondaryProgress="2.5"
+                            app:rcSecondaryProgressColor="@color/cardview_dark_background" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginBottom="3dp"
+                            android:layout_marginLeft="3dp"
+                            android:layout_marginRight="@dimen/standard_margin"
+                            android:layout_marginTop="3dp"
+                            android:text="(21)"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/small_font_size" />
+                    </RelativeLayout>
+                    <!--//4 rate number-->
+                    <!--//3 rate number-->
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/rate3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_margin="3dp"
+                            android:text="3"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/small_font_size" />
+
+                        <com.akexorcist.roundcornerprogressbar.RoundCornerProgressBar
+                            android:id="@+id/one_byone_3rate_rows_id"
+                            android:layout_width="100dp"
+                            android:layout_height="5dp"
+                            android:layout_centerInParent="true"
+                            android:gravity="center"
+                            android:layoutDirection="rtl"
+                            android:rotationY="180"
+                            app:rcBackgroundColor="@color/cardview_dark_background"
+                            app:rcBackgroundPadding="0dp"
+                            app:rcMax="5.0"
+                            app:rcProgress="3.7"
+                            app:rcProgressColor="@color/star_full_color"
+                            app:rcRadius="2dp"
+                            app:rcReverse="true"
+                            app:rcSecondaryProgress="2.5"
+                            app:rcSecondaryProgressColor="@color/cardview_dark_background" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginBottom="3dp"
+                            android:layout_marginLeft="3dp"
+                            android:layout_marginRight="@dimen/standard_margin"
+                            android:layout_marginTop="3dp"
+                            android:text="(17)"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/small_font_size" />
+                    </RelativeLayout>
+                    <!--//3 rate number-->
+                    <!--//2 rate number-->
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/rate2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_margin="3dp"
+                            android:text="2"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/small_font_size" />
+
+                        <com.akexorcist.roundcornerprogressbar.RoundCornerProgressBar
+                            android:id="@+id/one_byone_2rate_rows_id"
+                            android:layout_width="100dp"
+                            android:layout_height="5dp"
+                            android:layout_centerInParent="true"
+                            android:gravity="center"
+                            android:layoutDirection="rtl"
+                            android:rotationY="180"
+                            app:rcBackgroundColor="@color/cardview_dark_background"
+                            app:rcBackgroundPadding="0dp"
+                            app:rcMax="5.0"
+                            app:rcProgress="3.7"
+                            app:rcProgressColor="@color/star_full_color"
+                            app:rcRadius="2dp"
+                            app:rcReverse="true"
+                            app:rcSecondaryProgress="2.5"
+                            app:rcSecondaryProgressColor="@color/cardview_dark_background" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginBottom="3dp"
+                            android:layout_marginLeft="3dp"
+                            android:layout_marginRight="@dimen/standard_margin"
+                            android:layout_marginTop="3dp"
+                            android:text="(7)"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/small_font_size" />
+                    </RelativeLayout>
+                    <!--//2 rate number-->
+                    <!--//1 rate number-->
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/rate1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_margin="3dp"
+                            android:text="1"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/small_font_size" />
+
+                        <com.akexorcist.roundcornerprogressbar.RoundCornerProgressBar
+                            android:id="@+id/one_byone_1rate_rows_id"
+                            android:layout_width="100dp"
+                            android:layout_height="5dp"
+                            android:layout_centerInParent="true"
+                            android:gravity="center"
+                            android:layoutDirection="rtl"
+                            android:rotationY="180"
+                            app:rcBackgroundColor="@color/cardview_dark_background"
+                            app:rcBackgroundPadding="0dp"
+                            app:rcMax="5.0"
+                            app:rcProgress="3.7"
+                            app:rcProgressColor="@color/star_full_color"
+                            app:rcRadius="2dp"
+                            app:rcReverse="true"
+                            app:rcSecondaryProgress="2.5"
+                            app:rcSecondaryProgressColor="@color/cardview_dark_background" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginBottom="3dp"
+                            android:layout_marginLeft="3dp"
+                            android:layout_marginRight="@dimen/standard_margin"
+                            android:layout_marginTop="3dp"
+                            android:text="(10)"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/small_font_size" />
+                    </RelativeLayout>
+                    <!--//1 rate number-->
+                </LinearLayout>
+                <!--//====================================================================================================-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <com.iarcuschin.simpleratingbar.SimpleRatingBar
+                        android:id="@+id/big_overall_star_rate_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srb_borderColor="@color/white"
+                        app:srb_fillColor="@color/star_full_color"
+                        app:srb_isIndicator="true"
+                        app:srb_numberOfStars="5"
+                        app:srb_rating="3.5"
+                        app:srb_starBackgroundColor="@color/star_empty_color"
+                        app:srb_starSize="35dp"
+                        app:srb_starsSeparation="1dp"
+                        app:srb_stepSize="0.5" />
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:maxLines="1"
+                        android:text="3.5 از 5"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/large_font_size" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:maxLength="40"
+                        android:maxLines="1"
+                        android:text="از مجموع 57 رای کاربران"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/normal_font_size" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!--//rates upper layout-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_marginBottom="@dimen/default_margin"
+                android:layout_marginTop="@dimen/default_margin"
+                android:background="@color/white"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:gravity="center"
+                    android:maxLength="40"
+                    android:maxLines="1"
+                    android:text="نظرات کابران"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/large_font_size" />
+            </LinearLayout>
+
+            <!--//what-->
+            <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/standard_margin"
+                android:layoutDirection="rtl"
+                android:orientation="vertical"
+                app:cardCornerRadius="1dp"
+                app:cardElevation="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:id="@+id/view_header"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/theme_comment_darker">
+
+                        <ImageView
+                            android:id="@+id/comment_ic_id"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_margin="@dimen/standard_margin"
+                            android:src="@drawable/comment_white_ic" />
+
+                        <TextView
+                            android:id="@+id/user_name_view_txt_id"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@+id/comment_ic_id"
+                            android:layout_margin="@dimen/standard_margin"
+                            android:layout_toLeftOf="@+id/comment_ic_id"
+                            android:maxLength="40"
+                            android:maxLines="1"
+                            android:text="علی محمد علیزاده"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/large_font_size" />
+
+                        <TextView
+                            android:id="@+id/user_view_date_txt_id"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_margin="@dimen/standard_margin"
+                            android:text="29 آبان 1395"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/small_font_size" />
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/user_view_title_txt_id"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/default_margin"
+                            android:ellipsize="end"
+                            android:gravity="right"
+                            android:maxLines="1"
+                            android:text="ساعت جی شاک - عالی و شیک"
+                            android:textColor="@color/primary_text_black"
+                            android:textSize="@dimen/large_font_size"
+                            android:textStyle="bold" />
+
+                        <View
+                            android:layout_width="fill_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginLeft="@dimen/default_margin"
+                            android:layout_marginRight="@dimen/default_margin"
+                            android:background="@color/divider" />
+
+                        <TextView
+                            android:id="@+id/user_view_comment_txt_id"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/default_margin"
+                            android:ellipsize="end"
+                            android:gravity="right"
+                            android:lineSpacingExtra="8dp"
+                            android:text="شیک هستش ارزشش نسبت به قیمتش تقریبا بالاست \n اگه به جای بند رزین از فلز یا استیل استفاده میشد عالی بود \n بسیار ساعت شیکیه، فقط ابعادش برای اشخاص ریز جثه بزرگه"
+                            android:textColor="@color/secondary_text_gray"
+                            android:textSize="@dimen/small_font_size"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/standard_margin"
+                android:layoutDirection="rtl"
+                android:orientation="vertical"
+                app:cardCornerRadius="1dp"
+                app:cardElevation="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:id="@+id/view_header2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/theme_comment_darker">
+
+                        <ImageView
+                            android:id="@+id/comment_ic_id2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_margin="@dimen/standard_margin"
+                            android:src="@drawable/comment_white_ic" />
+
+                        <TextView
+                            android:id="@+id/user_name_view_txt_id2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@+id/comment_ic_id2"
+                            android:layout_margin="@dimen/standard_margin"
+                            android:layout_toLeftOf="@+id/comment_ic_id2"
+                            android:maxLength="40"
+                            android:maxLines="1"
+                            android:text="علی محمد علیزاده"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/large_font_size" />
+
+                        <TextView
+                            android:id="@+id/user_view_date_txt_id2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_margin="@dimen/standard_margin"
+                            android:text="29 آبان 1395"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/small_font_size" />
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/user_view_title_txt_id2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/default_margin"
+                            android:ellipsize="end"
+                            android:gravity="right"
+                            android:maxLines="1"
+                            android:text="ساعت جی شاک - عالی و شیک"
+                            android:textColor="@color/primary_text_black"
+                            android:textSize="@dimen/large_font_size"
+                            android:textStyle="bold" />
+
+                        <View
+                            android:layout_width="fill_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginLeft="@dimen/default_margin"
+                            android:layout_marginRight="@dimen/default_margin"
+                            android:background="@color/divider" />
+
+                        <TextView
+                            android:id="@+id/user_view_comment_txt_id2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/default_margin"
+                            android:ellipsize="end"
+                            android:gravity="right"
+                            android:lineSpacingExtra="8dp"
+                            android:text="شیک هستش ارزشش نسبت به قیمتش تقریبا بالاست \n اگه به جای بند رزین از فلز یا استیل استفاده میشد عالی بود بسیار ساعت شیکیه، فقط ابعادش برای اشخاص ریز جثه بزرگه"
+                            android:textColor="@color/secondary_text_gray"
+                            android:textSize="@dimen/small_font_size"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+            <!--//what-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/add_user_view_fab_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|bottom"
+        android:layout_margin="4dp"
+        app:fabSize="normal"
+        android:src="@drawable/comment_white_ic"
+        android:layout_marginTop="@dimen/default_margin"
+        />
+</FrameLayout>

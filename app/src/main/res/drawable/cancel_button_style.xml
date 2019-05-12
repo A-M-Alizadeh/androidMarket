@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--<item android:drawable="@color/secondary_text_gray" android:state_pressed="true">-->
+    <!--</item>-->
+    <!--<item android:drawable="@color/theme_comment_darker" android:state_focused="true">-->
+    <!--</item>-->
+    <!--<item android:drawable="@color/theme_comment_darker"/>-->
+
+
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <corners android:radius="5dp" />-->
+            <solid android:color="@color/secondary_text_gray" />
+        </shape>
+    </item>
+
+    <item android:state_focused="true">
+        <shape android:shape="rectangle">
+            <corners android:radius="5dp" />
+            <solid android:color="@color/theme_comment_darker" />
+        </shape>
+    </item>
+
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:radius="5dp" />
+            <solid android:color="@color/theme_comment_darker" />
+        </shape>
+    </item>
+
+
+</selector>

@@ -1,0 +1,94 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="rtl"
+    tools:context="com.example.aalizade.mbazar_base_app.fragments.membershiprequest_frags.MembershipRequest_IntroducerOrgenizationFragment"
+    android:id="@+id/member_register_introduce_info_frame_id"
+    >
+    <include
+        android:id="@+id/progress_wrapper_id"
+        layout="@layout/global_progressbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/user_introducer_username_Teit_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/standard_margin"
+            android:hint="کلمه کاربری"
+            android:textSize="@dimen/small_font_size" />
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/user_introducer_nationalCode_Teit_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/standard_margin"
+            android:hint="کدملی"
+            android:textSize="@dimen/small_font_size" />
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/user_introducer_name_Teit_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/standard_margin"
+            android:hint="نام"
+            android:textSize="@dimen/small_font_size" />
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/user_introducer_familyname_Teit_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/standard_margin"
+            android:hint="نام خانوادگی"
+            android:textSize="@dimen/small_font_size" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/step_back_btn_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/buy_button_style"
+                android:text="قبلی"
+                android:layout_margin="1dp"
+                />
+
+            <Button
+                android:id="@+id/register_form_submit_btn_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/buy_button_style"
+                android:text="تایید"
+                android:textSize="@dimen/normal_font_size" />
+
+            <Button
+                android:id="@+id/register_cancel_btn_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/cancel_button_style"
+                android:text="انصراف"
+                android:textSize="@dimen/normal_font_size" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>
+

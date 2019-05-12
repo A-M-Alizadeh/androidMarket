@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/standard_margin"
+    android:gravity="center"
+    android:layoutDirection="rtl"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginLeft="@dimen/standard_margin"
+            android:layout_marginRight="@dimen/standard_margin"
+            android:background="@drawable/checkout_active_step_round_corner"
+            android:padding="@dimen/distance_4dp"
+            android:src="@drawable/basket_white_ic" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="سبد خرید"
+            android:textSize="@dimen/small_font_size" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="20dp"
+        android:layout_height="1dp"
+        android:background="@color/primary_text_black" />
+
+    <ImageView
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginLeft="@dimen/standard_margin"
+        android:layout_marginRight="@dimen/standard_margin"
+        android:background="@drawable/checkout_deactive_step_round_corner"
+        android:padding="@dimen/distance_4dp"
+        android:src="@drawable/socialgroup_white_ic" />
+
+    <View
+        android:layout_width="20dp"
+        android:layout_height="1dp"
+        android:background="@color/primary_text_black" />
+
+    <ImageView
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginLeft="@dimen/standard_margin"
+        android:layout_marginRight="@dimen/standard_margin"
+        android:background="@drawable/checkout_deactive_step_round_corner"
+        android:padding="@dimen/distance_4dp"
+        android:src="@drawable/location_white_ic" />
+
+    <View
+        android:layout_width="20dp"
+        android:layout_height="1dp"
+        android:background="@color/primary_text_black" />
+
+    <ImageView
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginLeft="@dimen/standard_margin"
+        android:layout_marginRight="@dimen/standard_margin"
+        android:background="@drawable/checkout_deactive_step_round_corner"
+        android:padding="@dimen/distance_4dp"
+        android:src="@drawable/transfer_white_ic" />
+
+    <View
+        android:layout_width="20dp"
+        android:layout_height="1dp"
+        android:background="@color/primary_text_black" />
+
+    <ImageView
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginLeft="@dimen/standard_margin"
+        android:layout_marginRight="@dimen/standard_margin"
+        android:background="@drawable/checkout_deactive_step_round_corner"
+        android:padding="@dimen/distance_4dp"
+        android:src="@drawable/reviewandpay_white_ic" />
+
+
+</LinearLayout>

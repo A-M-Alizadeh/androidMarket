@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/distance_4dp"
+    android:elevation="@dimen/distance_4dp"
+    android:layoutDirection="rtl"
+    app:cardCornerRadius="@dimen/standard_least_distance"
+    app:cardElevation="@dimen/standard_least_distance"
+    tools:targetApi="lollipop">
+
+    <LinearLayout
+        android:id="@+id/bon_layout_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/standard_least_distance">
+
+        <!--//code and type-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="کد رهگیری"
+                    android:textSize="@dimen/normal_font_size"
+                    android:textColor="@color/secondary_text_gray"
+                    android:layout_margin="@dimen/distance_4dp"
+                    android:gravity="right"
+                    />
+                <TextView
+                    android:id="@+id/order_carrier_code"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="عادی"
+                    android:textSize="@dimen/large_font_size"
+                    android:textStyle="bold"
+                    android:textColor="@color/primary_text_black"
+                    android:layout_margin="@dimen/distance_4dp"
+                    android:layoutDirection="rtl"
+                    android:gravity="left"
+                    />
+
+            </LinearLayout>
+        </LinearLayout>
+        <!--//code and type-->
+
+        <!--//name and username-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="وضعیت ارسال"
+                    android:textSize="@dimen/normal_font_size"
+                    android:textColor="@color/secondary_text_gray"
+                    android:layout_margin="@dimen/distance_4dp"
+                    android:gravity="right"
+                    />
+                <TextView
+                    android:id="@+id/order_carrier_status"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="عادی"
+                    android:textSize="@dimen/large_font_size"
+                    android:textStyle="bold"
+                    android:textColor="@color/primary_text_black"
+                    android:layout_margin="@dimen/distance_4dp"
+                    android:layoutDirection="rtl"
+                    android:gravity="left"
+                    />
+
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="نوع روش حمل"
+                    android:textSize="@dimen/normal_font_size"
+                    android:textColor="@color/secondary_text_gray"
+                    android:layout_margin="@dimen/distance_4dp"
+                    android:gravity="right"
+                    />
+                <TextView
+                    android:id="@+id/order_carrier_method"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="عادی"
+                    android:textSize="@dimen/large_font_size"
+                    android:textStyle="bold"
+                    android:textColor="@color/primary_text_black"
+                    android:layout_margin="@dimen/distance_4dp"
+                    android:layoutDirection="rtl"
+                    android:gravity="left"
+                    />
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <!--//name and username-->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#1E824C"
+            />
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/grid_stock"
+            android:layout_margin="5dp"
+            android:padding="5dp"
+            android:columnCount="4"
+            android:layoutDirection="ltr"
+            >
+
+            <TextView
+                android:id="@+id/order_carrier_weight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_columnWeight="1"
+                android:layout_gravity="center_vertical|fill_horizontal"
+                android:layout_margin="4dp"
+                android:layout_row="0"
+                android:layoutDirection="rtl"
+                android:gravity="left"
+                android:lines="1"
+                android:maxWidth="50dp"
+                android:padding="0dp"
+                android:text="فاکتور"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_gravity="center_vertical|center_horizontal|end"
+                android:layout_row="0"
+                android:text="وزن محصولات" />
+
+            <TextView
+                android:id="@+id/order_carrier_quantity"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_column="2"
+                android:layout_columnWeight="1"
+                android:layout_gravity="center_vertical|fill_horizontal"
+                android:layout_margin="3dp"
+                android:layout_row="0"
+                android:layoutDirection="rtl"
+                android:padding="0dp"
+                android:text="درخواست"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="3"
+                android:layout_gravity="center_vertical|center_horizontal|end"
+                android:layout_row="0"
+                android:text="تعداد محصولات" />
+
+            <TextView
+                android:id="@+id/order_carrier_duration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_columnWeight="1"
+                android:layout_gravity="center_vertical|fill_horizontal"
+                android:layout_margin="4dp"
+                android:layout_row="1"
+                android:inputType="number"
+                android:text="21"
+                android:lines="1"
+                android:maxWidth="50dp"
+                android:padding="0dp"
+                android:textColor="@color/black"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_gravity="center_vertical|center_horizontal|end"
+                android:layout_row="1"
+                android:text="مدت زمان حمل" />
+
+            <TextView
+                android:id="@+id/order_carrier_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="2"
+                android:layout_columnWeight="1"
+                android:layout_gravity="center_vertical|fill_horizontal"
+                android:layout_margin="4dp"
+                android:layout_row="1"
+                android:inputType="number"
+                android:gravity="right"
+                android:text="21"
+                android:lines="1"
+                android:maxWidth="50dp"
+                android:padding="0dp"
+                android:textColor="@color/black"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="3"
+                android:layout_gravity="center_vertical|center_horizontal|end"
+                android:layout_row="1"
+                android:text="هزینه حمل" />
+
+        </GridLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#1E824C"
+            />
+        <!--//dates-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="تاریخ ارسال"
+                    android:textSize="@dimen/normal_font_size"
+                    android:textColor="@color/secondary_text_gray"
+                    android:layout_margin="@dimen/distance_4dp"
+                    android:gravity="right"
+                    />
+                <TextView
+                    android:id="@+id/order_carrier_send_date"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="1397/02/12"
+                    android:textColor="@color/primary_text_black"
+                    android:layout_margin="@dimen/distance_4dp"
+                    android:textSize="13sp"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="تاریخ تحویل"
+                    android:textSize="@dimen/normal_font_size"
+                    android:textColor="@color/secondary_text_gray"
+                    android:layout_margin="@dimen/distance_4dp"
+                    android:gravity="right"
+                    />
+                <TextView
+                    android:id="@+id/order_carrier_receive_date"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="1397/02/12"
+                    android:textColor="@color/primary_text_black"
+                    android:layout_margin="@dimen/distance_4dp"
+                    android:gravity="left"
+                    android:textSize="13sp"
+                    />
+
+            </LinearLayout>
+        </LinearLayout>
+        <!--//dates-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_below="@+id/date_layout_id"
+            android:layout_marginBottom="@dimen/standard_least_distance"
+            android:layout_marginTop="5dp"
+            >
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:id="@+id/order_carrier_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/standard_least_distance"
+                android:layout_marginLeft="@dimen/standard_least_distance"
+                android:gravity="center"
+                android:orientation="horizontal"
+                >
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/details_item_ic" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/standard_least_distance"
+                    android:text="شرح محصولات"
+                    android:textColor="@color/primary_text_black"
+                    android:textSize="@dimen/small_font_size" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

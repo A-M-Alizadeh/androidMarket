@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_height="wrap_content"
+    android:layoutDirection="rtl"
+    >
+
+    <TextView
+        android:id="@+id/specification_title_txt_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:text="مشخصه"
+        android:maxLines="1"
+        android:textSize="@dimen/normal_font_size"
+        android:textColor="@color/secondary_text_gray"
+        android:textStyle="bold"
+        android:layout_margin="@dimen/distance_4dp"
+        />
+    <TextView
+        android:id="@+id/specification_value_txt_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="مقدار مشخصه"
+        android:maxLines="1"
+        android:gravity="right"
+        android:textSize="@dimen/normal_font_size"
+        android:textColor="@color/primary_text_black"
+        android:textStyle="bold"
+        android:layout_margin="@dimen/distance_4dp"
+        />
+
+</LinearLayout>

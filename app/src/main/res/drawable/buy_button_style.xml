@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--<item android:drawable="@color/after_buy_btn_color2" android:state_pressed="true">-->
+    <!--</item>-->
+
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <corners android:radius="2dp" />
+            <!--<stroke android:width="1dip" android:color="#5e7974" />-->
+            <solid android:color="@color/after_buy_btn_color2" />
+        </shape>
+    </item>
+
+    <item android:state_focused="true">
+        <shape android:shape="rectangle">
+            <corners android:radius="2dp" />
+            <solid android:color="@color/before_buy_btn_color2" />
+        </shape>
+    </item>
+
+    <item android:state_enabled="false">
+        <shape android:shape="rectangle">
+            <corners android:radius="2dp" />
+            <solid android:color="@color/divider" />
+        </shape>
+    </item>
+
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:radius="2dp" />
+            <solid android:color="@color/before_buy_btn_color2" />
+        </shape>
+    </item>
+
+    <!--<item android:drawable="@color/before_buy_btn_color2" android:state_focused="true"></item>-->
+    <!--<item android:drawable="@color/divider" android:state_enabled="false" />-->
+    <!--<item android:drawable="@color/before_buy_btn_color2" />-->
+</selector>

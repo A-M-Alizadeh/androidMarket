@@ -1,0 +1,167 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/social_framelayout_id"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:background="@color/backgrnd"
+    android:tag="frag1"
+    tools:context="com.example.aalizade.mbazar_base_app.fragments.checkout_frags.CheckOutSocialOrganizationFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!--//header-->
+        <RelativeLayout
+            android:id="@+id/mother_layout_id"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <include
+                android:id="@+id/step_indicator_id"
+                layout="@layout/checkout_2nd_stepindicator_layer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/standard_margin" />
+
+            <!--//header===================================================================================================-->
+            <!--//address data================================-->
+            <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/address_date_cardview_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/step_indicator_id"
+                android:layout_margin="@dimen/standard_margin"
+                android:elevation="4dp"
+                android:layoutDirection="rtl"
+                android:orientation="vertical"
+                app:cardCornerRadius="1dp"
+                app:cardElevation="2dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:id="@+id/titles_layout_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/standard_margin"
+                        android:layout_marginTop="@dimen/standard_margin"
+                        android:background="@color/divider"
+                        android:paddingBottom="@dimen/standard_margin"
+                        android:paddingTop="@dimen/standard_margin">
+
+                        <TextView
+                            android:id="@+id/degree_list_level_txt_id"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/default_margin"
+                            android:layout_marginRight="@dimen/default_margin"
+                            android:text="نام کانون"
+                            android:textColor="@color/primary_text_black"
+                            android:textSize="@dimen/normal_font_size" />
+
+                        <TextView
+                            android:id="@+id/degree_list_field_txt_id"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBaseline="@+id/degree_list_level_txt_id"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/default_margin"
+                            android:layout_marginRight="@dimen/default_margin"
+                            android:text="کد کانون"
+                            android:textColor="@color/primary_text_black"
+                            android:textSize="@dimen/normal_font_size" />
+                    </RelativeLayout>
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/social_groups_recycler_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/titles_layout_id" />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+            <!--//address data================================-->
+
+            <!--//sending data================================-->
+            <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/sending_date_cardview_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/address_date_cardview_id"
+                android:layout_margin="@dimen/standard_margin"
+                android:elevation="4dp"
+                android:layoutDirection="rtl"
+                android:orientation="vertical"
+                app:cardCornerRadius="1dp"
+                app:cardElevation="2dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/stepsView">
+
+                    <TextView
+                        android:id="@+id/selected_socialgroup_title_txt_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_columnWeight="1"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="کانون انتخابی"
+                        android:textColor="@color/primary_text_black"
+                        android:textSize="@dimen/normal_font_size" />
+
+                    <LinearLayout
+                        android:id="@+id/selected_social_group_layout_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/selected_socialgroup_title_txt_id"
+                        android:layout_columnSpan="2"
+                        android:layout_marginBottom="@dimen/standard_margin"
+                        android:layout_marginTop="@dimen/standard_margin"
+                        android:background="@color/divider"
+                        android:orientation="horizontal"
+                        android:paddingBottom="@dimen/standard_margin"
+                        android:paddingTop="@dimen/standard_margin">
+
+                        <TextView
+                            android:id="@+id/selected_socialgroup_name_txt_id"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="انتخاب کنید"
+                            android:textColor="@color/primary_text_black"
+                            android:textSize="@dimen/normal_font_size" />
+
+                        <TextView
+                            android:id="@+id/selected_socialgroup_code_txt_id"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="انتخاب کنید"
+                            android:textColor="@color/primary_text_black"
+                            android:textSize="@dimen/normal_font_size" />
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+            <!--//sending data================================-->
+
+        </RelativeLayout>
+    </ScrollView>
+
+</FrameLayout>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/linear_layout_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:animateLayoutChanges="true">
+
+            <LinearLayout
+                android:id="@+id/purchase_options_btn_layer_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:orientation="horizontal">
+                <!--//buy_btn-->
+                <Button
+                    android:id="@+id/Payment_gateway_btn_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/after_buy_btn_color2"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:text="درگاه پرداخت"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/normal_font_size" />
+                <!--//buy_btn-->
+                <!--//buy_btn-->
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/dark_yellow"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:text="اقساط"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/normal_font_size" />
+                <!--//buy_btn-->
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/final_price_payment_layout_id"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:visibility="visible"
+                >
+                <TextView
+                    android:id="@+id/final_price_btmsheet_txt_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:textSize="@dimen/large_font_size"
+                    android:layout_margin="@dimen/standard_margin"
+                    />
+                <Button
+                    android:id="@+id/payment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/standard_margin"
+                    android:layout_alignParentLeft="true"
+                    android:background="@color/after_buy_btn_color2"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:text="پرداخت نقدی"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/normal_font_size" />
+            </RelativeLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/optionsRecycler"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <ProgressBar
+                android:id="@+id/progressbar_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center" />
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</RelativeLayout>

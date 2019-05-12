@@ -1,0 +1,836 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/gift_request_activity_mother_layout_id"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.aalizade.mbazar_base_app.activities.gift.UserGiftRequestActivity">
+
+    <include
+        android:id="@+id/progress_wrapper_id"
+        layout="@layout/global_progressbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/before_home_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_marginBottom="2dp"
+            app:layout_scrollFlags="scroll|enterAlways">
+
+            <!--<RelativeLayout-->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/standard_margin"
+                    android:text="درخواست صدور بن هدیه"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/large_font_size"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <!--</RelativeLayout>-->
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:animateLayoutChanges="true"
+            android:orientation="vertical"
+            android:focusableInTouchMode="true"
+            >
+            <!--android:descendantFocusability="blocksDescendants"-->
+
+            <LinearLayout
+                android:id="@+id/gift_quantity_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="10dp"
+                >
+                <EditText
+                    android:id="@+id/user_gift_quantity_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="4dp"
+                    android:textDirection="rtl"
+                    android:inputType="number"
+                    android:textColor="@color/black"
+                    android:textSize="13sp"
+                    android:maxLines="1"
+                    android:scrollHorizontally="true"
+                    />
+                <TextView
+                    android:id="@+id/user_gift_quantity_error"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="تعداد بن"
+                    android:textDirection="rtl"
+                    android:gravity="right"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/gift_amount_container"
+                android:layout_below="@id/gift_quantity_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="10dp"
+                >
+                <EditText
+                    android:id="@+id/user_gift_unit_amount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="4dp"
+                    android:textDirection="rtl"
+                    android:inputType="number"
+                    android:textColor="@color/black"
+                    android:textSize="13sp"
+                    android:maxLines="1"
+                    android:scrollHorizontally="true"
+                    />
+                <TextView
+                    android:id="@+id/user_gift_unit_amount_error"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="مبلغ هر بن"
+                    android:textDirection="rtl"
+                    android:gravity="right"
+                    />
+            </LinearLayout>
+
+            <View
+                android:layout_below="@id/gift_amount_container"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/current_price"
+                android:layout_margin="5dp"
+                />
+
+            <LinearLayout
+                android:id="@+id/total_amount_container"
+                android:layout_below="@id/gift_amount_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="5dp"
+                >
+                <LinearLayout
+                    android:id="@+id/tax_amount_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_weight="1"
+                    android:layout_margin="4dp"
+                    >
+                    <TextView
+                        android:id="@+id/user_gift_amount_tax_include"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="1dp"
+                        android:textColor="@color/black"
+                        android:textSize="13sp"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="مبلغ قابل پرداخت"
+                        android:textDirection="rtl"
+                        android:gravity="right"
+                        android:textSize="13sp"
+                        />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/payment_amount_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_weight="1"
+                    android:layout_margin="4dp"
+                    >
+                    <TextView
+                        android:id="@+id/user_gift_amount"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="1dp"
+                        android:textColor="@color/black"
+                        android:textSize="13sp"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="right"
+                        android:text="مبلغ کل بن ها"
+                        android:textDirection="rtl"
+                        android:textSize="13sp"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/container1"
+                android:layout_below="@id/container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="5dp"
+                >
+                <LinearLayout
+                    android:id="@+id/tax1_amount_container1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_weight="1"
+                    android:layout_margin="4dp"
+                    >
+
+                    <TextView
+                        android:id="@+id/tax_amount_txt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="0dp"
+                        android:textColor="@color/black"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="right"
+                        android:text="مبلغ مالیات"
+                        android:textDirection="rtl"
+                        android:textSize="13sp"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/payment1_amount_container1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_weight="1"
+                    android:layout_margin="4dp"
+                    >
+                    <TextView
+                        android:id="@+id/user_gift_request_expire_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="1dp"
+                        android:text="----/--/--"
+                        android:textSize="13sp"
+                        android:maxLines="1"
+                        android:textColor="@color/black"
+                    />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="تاریخ انقضا بن"
+                        android:textDirection="rtl"
+                        android:gravity="right"
+                        android:textSize="13sp"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view5"
+                android:layout_below="@id/container1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/current_price"
+                android:layout_margin="5dp"
+                />
+
+            <LinearLayout
+                android:id="@+id/container2"
+                android:layout_below="@id/view5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="5dp"
+                >
+                <LinearLayout
+                    android:id="@+id/tax1_amount_container2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_weight="1"
+                    android:layout_margin="4dp"
+                    >
+                    <Spinner
+                        android:id="@+id/gift_request_payment_method_spn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="1dp"
+                        android:textColor="@color/black"
+                        android:layoutDirection="rtl"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="right"
+                        android:text="نحوه پرداخت"
+                        android:textDirection="rtl"
+                        android:textSize="13sp"
+                        android:paddingTop="5dp"
+                        />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/payment1_amount_container2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_weight="1"
+                    android:layout_margin="4dp"
+                    >
+                    <AutoCompleteTextView
+                        android:id="@+id/special_product_type_group_spn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textDirection="rtl"
+                        android:padding="8dp"
+                        android:inputType="textAutoComplete"
+                        android:textColor="@color/black"
+                        android:textSize="13sp"
+                        android:layout_marginRight="5dp"
+                        android:hint="گروه محصول مورد نظر خود را جستجو کنید"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="گروه محصولات خاص"
+                        android:textDirection="rtl"
+                        android:gravity="right"
+                        android:textSize="13sp"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/container"
+                android:layout_below="@id/total_amount_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="5dp"
+                >
+                <LinearLayout
+                    android:id="@+id/tax1_amount_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_weight="1"
+                    android:layout_margin="4dp"
+                    >
+                    <TextView
+                        android:id="@+id/tax_current_total_rate_txt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="0dp"
+                        android:textColor="@color/black"
+                        android:textSize="13sp"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="درصد مالیات"
+                        android:textDirection="rtl"
+                        android:gravity="right"
+                        android:textSize="13sp"
+                        />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/payment1_amount_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_weight="1"
+                    android:layout_margin="4dp"
+                    >
+                    <TextView
+                        android:id="@+id/tax_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="1dp"
+                        android:textColor="@color/black"
+                        android:textSize="13sp"
+                        android:layout_marginRight="3dp"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="مالیات"
+                        android:textDirection="rtl"
+                        android:textSize="13sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+            <View
+                android:id="@+id/view2"
+                android:layout_below="@id/container2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/current_price"
+                android:layout_margin="5dp"
+                />
+
+            <RelativeLayout
+                android:id="@+id/payment_information_container"
+                android:layout_below="@id/view2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:visibility="gone"
+                android:background="@drawable/section_border"
+                >
+
+                <TextView
+                    android:id="@+id/payment_information_container_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="مشخصات قبض واریزی"
+                    android:layout_margin="5dp"
+                    android:layout_marginBottom="0dp"
+                    android:textColor="@color/black"
+                    />
+
+                <LinearLayout
+                    android:layout_below="@id/payment_information_container_title"
+                    android:id="@+id/payment_type_value"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_margin="5dp"
+                    >
+                    <RadioGroup
+                        android:id="@+id/payment_type_value_radio_group"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layoutDirection="rtl"
+                        android:gravity="center"
+                        >
+                        <RadioButton
+                            android:id="@+id/by_card"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="کارت به کارت"
+                            android:textSize="12sp"
+                            android:textColor="@color/black"
+                            android:checked="true"
+                            />
+                        <RadioButton
+                            android:id="@+id/by_deposite"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="انتقال به حساب"
+                            android:textSize="12sp"
+                            android:textColor="@color/black"
+                            />
+                    </RadioGroup>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_below="@id/payment_type_value"
+                    android:id="@+id/payment_reference_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_margin="5dp"
+                    >
+                    <EditText
+                        android:id="@+id/payment_reference"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="4dp"
+                        android:textColor="@color/black"
+                        android:textSize="13sp"
+                        android:maxLines="1"
+                        android:inputType="number"
+                        android:scrollHorizontally="true"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="شماره پیگیری یا شماره ارجاع"
+                        android:textDirection="rtl"
+                        android:gravity="right"
+                        android:textSize="13sp"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_below="@id/payment_reference_container"
+                    android:id="@+id/money_transfer_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_margin="5dp"
+                    >
+                    <TextView
+                        android:id="@+id/money_transfer_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="----/--/--"
+                        android:textColor="@color/black"
+                        android:padding="1dp"
+                        android:textSize="13sp"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="تاریخ واریز به حساب "
+                        android:textDirection="rtl"
+                        android:gravity="right"
+                        android:textSize="13sp"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_below="@id/money_transfer_container"
+                    android:id="@+id/money_transfer_source_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_margin="5dp"
+                    >
+                    <EditText
+                        android:id="@+id/money_transfer_source"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="2dp"
+                        android:textColor="@color/black"
+                        android:maxLines="1"
+                        android:textSize="13sp"
+                        android:lines="1"
+                        android:scrollHorizontally="true"
+                        android:inputType="number"
+                        />
+                    <TextView
+                        android:id="@+id/money_transfer_source_error"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="چهار رقم آخر کارت"
+                        android:textDirection="ltr"
+                        android:gravity="right"
+                        android:textSize="13sp"
+                        android:padding="4dp"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_below="@id/money_transfer_source_container"
+                    android:id="@+id/payment_description_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_margin="5dp"
+                    >
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="توضیحات"
+                        android:textDirection="rtl"
+                        android:gravity="right"
+                        android:textSize="13sp"
+                        />
+                    <EditText
+                        android:id="@+id/transfer_description"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="3dp"
+                        android:inputType="textMultiLine"
+                        android:ems="4"
+                        android:textColor="@color/black"
+                        android:textSize="13sp"
+                        />
+
+                </LinearLayout>
+
+
+                <Button
+                    android:id="@+id/choose_file_dialog"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="انتخاب فایل"
+                    android:layout_below="@id/payment_description_container"
+                    android:textColor="@color/colorAccent"
+                    android:background="@drawable/choose_file_button_border"
+                    android:layout_margin="5dp"
+                    />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_below="@id/payment_information_container"
+                android:id="@+id/user_gift_print_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="5dp"
+                >
+                <CheckBox
+                    android:id="@+id/user_gift_print"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="0dp"
+
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="مایل به دریافت نسخه چاپی هستم؟"
+                    android:textDirection="ltr"
+                    android:gravity="right"
+                    android:textSize="13sp"
+                    />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/address_container"
+                android:layout_below="@id/user_gift_print_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/section_border"
+                android:layout_margin="5dp"
+                android:visibility="gone"
+                >
+
+                <TextView
+                    android:id="@+id/address_container_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="نشانی تحویل نسخه چاپی"
+                    android:layout_margin="5dp"
+                    android:layout_marginBottom="0dp"
+                    android:textColor="@color/black"
+                    />
+
+                <LinearLayout
+                    android:layout_below="@id/address_container_title"
+                    android:id="@+id/saved_address_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_margin="5dp"
+                    >
+                    <Spinner
+                        android:id="@+id/exist_address_spn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="1dp"
+                        android:layoutDirection="rtl"
+                        android:textColor="@color/black"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="نشانی موجود"
+                        android:textDirection="rtl"
+                        android:gravity="right"
+                        android:textSize="13sp"
+                        android:paddingTop="5dp"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_below="@id/saved_address_container"
+                    android:id="@+id/temp_address_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_margin="5dp"
+                    >
+                    <CheckBox
+                        android:id="@+id/temp_address_check"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="0dp"
+
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="نشانی موقت"
+                        android:textDirection="rtl"
+                        android:gravity="right"
+                        android:textSize="13sp"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/temporary_address_container"
+                    android:layout_below="@+id/temp_address_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+                    >
+                    <LinearLayout
+                        android:id="@+id/exist_address_container"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_margin="5dp"
+                        >
+                        <AutoCompleteTextView
+                            android:id="@+id/temp_address_city_auto"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:padding="3dp"
+                            android:completionThreshold="1"
+                            android:textColor="@color/black"
+                            android:textSize="13sp"
+                            android:inputType="textAutoComplete"
+                            android:maxLines="1"
+                            android:scrollHorizontally="true"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="شهر"
+                            android:textDirection="rtl"
+                            android:gravity="right"
+                            android:textSize="13sp"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/temp_address_txt_container"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_margin="5dp"
+                        >
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="نشانی"
+                            android:textDirection="rtl"
+                            android:gravity="right"
+                            android:textSize="13sp"
+                            />
+                        <EditText
+                            android:id="@+id/temp_address_txt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:padding="3dp"
+                            android:inputType="textMultiLine"
+                            android:ems="4"
+                            android:textColor="@color/black"
+                            android:textSize="13sp"
+                            />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+
+            </RelativeLayout>
+
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/address_container"
+                android:layout_centerInParent="true"
+                android:columnCount="2"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_alignParentEnd="true"
+                >
+                <Button
+                    android:id="@+id/reject"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="fill_horizontal"
+                    android:text="انصراف"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/cancel_button_border"
+                    android:textColor="@color/depricated_price"
+                    />
+
+                <Button
+                    android:id="@+id/submit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="fill_horizontal"
+                    android:text="تایید"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/submit_button_border"
+                    android:textColor="@color/current_price"
+                    />
+            </GridLayout>
+
+
+
+
+
+        </RelativeLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- "Mark Favorite", should appear as action button if possible -->
+    <item
+        android:id="@+id/action_universal_search_ic_id"
+        android:icon="@drawable/search_white_ic"
+        android:title="UniversalSearch"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/shopping_card_toolbar_ic_id"
+        android:icon="@drawable/ic_shopping_cart_white"
+        android:title="shopping_card"
+        app:showAsAction="always" />
+
+    <!-- Settings, should always be in the overflow -->
+    <!--<item-->
+        <!--android:id="@+id/action_settings_ic_id"-->
+        <!--android:title="etc"-->
+        <!--app:showAsAction="never" />-->
+
+</menu>

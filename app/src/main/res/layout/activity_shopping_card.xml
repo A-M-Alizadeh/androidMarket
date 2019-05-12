@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/beforehome_mother_drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:background="@color/backgrnd"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:layoutDirection="rtl">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/shopping_card_activity_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:layout_scrollFlags="scroll|enterAlways">
+
+        </android.support.v7.widget.Toolbar>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#DADFE1"
+            android:gravity="center">
+
+            <!--android:text="جمع کل خرید (20) آیتم"-->
+            <TextView
+                android:id="@+id/totla_quantity_in_title_txt_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/default_margin"
+                android:maxLines="1"
+                android:textColor="@color/primary_text_black"
+                android:textSize="@dimen/large_font_size" />
+
+            <TextView
+                android:id="@+id/totla_price_in_title_txt_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/tooman_in_title_txt_id"
+                android:layout_marginLeft="@dimen/default_margin"
+                android:maxLines="1"
+                android:textColor="@color/primary_text_black"
+                android:textSize="@dimen/large_font_size" />
+
+            <!--android:text="2587000"-->
+
+            <TextView
+                android:id="@+id/tooman_in_title_txt_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="@dimen/default_margin"
+                android:maxLines="1"
+                android:text="تومان"
+                android:textColor="@color/primary_text_black"
+                android:textSize="@dimen/large_font_size" />
+        </RelativeLayout>
+
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="?attr/actionBarSize"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/shopping_card_activity_recycler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:listItem="@layout/shopping_card_card_design" />
+            <ProgressBar
+                android:id="@+id/shopping_card_progressbar_id"
+                android:visibility="gone"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/cart_is_empty_txt_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/secondary_text_gray"
+                android:textSize="@dimen/large_font_size"
+                android:text="سبد خرید خالی است"
+                android:visibility="gone"
+                />
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+    <!--<LinearLayout-->
+    <!--android:id="@+id/overall_showing_layout_id"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_gravity="bottom"-->
+    <!--android:layout_marginTop="?attr/actionBarSize"-->
+    <!--android:orientation="vertical"-->
+    <!--app:layout_scrollFlags="scroll|exitUntilCollapsed">-->
+
+
+    <LinearLayout
+        android:id="@+id/shopping_card_bottom_layout_btn_id"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_gravity="bottom"
+        android:background="@color/before_buy_btn_color2"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?attr/selectableItemBackground"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/default_margin"
+            android:maxLines="1"
+            android:text="نهایی کردن خرید"
+            android:textColor="@color/white"
+            android:textSize="@dimen/large_font_size" />
+    </LinearLayout>
+
+    <include
+        android:id="@+id/progress_wrapper_id"
+        layout="@layout/global_progressbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+    <!--</LinearLayout>-->
+
+</android.support.design.widget.CoordinatorLayout>

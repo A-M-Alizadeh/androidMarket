@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/prd_list_mother_drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:background="@color/backgrnd"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:layoutDirection="rtl">
+
+    <include
+        android:id="@+id/progress_wrapper_id"
+        layout="@layout/global_progressbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/product_lists_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:layout_scrollFlags="snap">
+
+        </android.support.v7.widget.Toolbar>
+        <!--//filter-->
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            app:cardBackgroundColor="@color/white">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:gravity="center_vertical">
+
+                <!--//ordering-->
+                <RelativeLayout
+                    android:id="@+id/ordering_btn_layout_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="10dp">
+
+                    <ImageView
+                        android:id="@+id/reorder_list_btn_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/lists_reorder_gray_ic" />
+
+                    <TextView
+                        android:id="@+id/reorder_list_btn_title_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toLeftOf="@+id/reorder_list_btn_id"
+                        android:text="مرتب سازی"
+                        android:textColor="@color/primary_text_black"
+                        android:textSize="@dimen/large_font_size"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/reorder_list_btn_title_id"
+                        android:layout_toLeftOf="@+id/reorder_list_btn_id"
+                        android:text="گرانترین"
+                        android:textColor="@color/secondary_text_gray"
+                        android:textSize="@dimen/small_font_size" />
+                </RelativeLayout>
+                <!--//ordering-->
+
+                <!--//filtering-->
+                <RelativeLayout
+                    android:id="@+id/list_filtering_layout_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="10dp"
+                    android:layout_toLeftOf="@+id/ordering_btn_layout_id">
+
+                    <ImageView
+                        android:id="@+id/filtering_list_btn_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/lists_filtering_gray_ic" />
+
+                    <TextView
+                        android:id="@+id/filtering_list_btn_title_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toLeftOf="@+id/filtering_list_btn_id"
+                        android:text="فیلتر کردن"
+                        android:textColor="@color/primary_text_black"
+                        android:textSize="@dimen/large_font_size"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/filtering_list_btn_title_id"
+                        android:layout_toLeftOf="@+id/filtering_list_btn_id"
+                        android:text="قیمت،رنگ،برندو..."
+                        android:textColor="@color/secondary_text_gray"
+                        android:textSize="@dimen/small_font_size" />
+                </RelativeLayout>
+                <!--//filtering-->
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/products_list_view_image_btn_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_gravity="left|center_vertical"
+                android:layout_margin="8dp"
+                android:src="@drawable/list_view_gray_big_row" />
+
+        </android.support.v7.widget.CardView>
+        <!--//filter-->
+
+
+    </android.support.design.widget.AppBarLayout>
+
+    <!--<android.support.v4.widget.NestedScrollView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--app:layout_behavior="@string/appbar_scrolling_view_behavior">-->
+
+        <!--//load more date to recyclerview-->
+        <!--<RelativeLayout-->
+            <!--app:layout_behavior="@string/appbar_scrolling_view_behavior"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent">-->
+
+            <android.support.v7.widget.RecyclerView
+                app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                android:id="@+id/produs_lists_recycler_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:listItem="@layout/products_two_grid_view_card" />
+
+            <!--<ProgressBar-->
+                <!--android:id="@+id/item_progress_bar"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_below="@+id/produs_lists_recycler_id"-->
+                <!--android:layout_alignParentBottom="true"-->
+                <!--android:layout_centerHorizontal="true"-->
+                <!--android:elevation="@dimen/distance_4dp"-->
+                <!--android:padding="@dimen/distance_4dp"-->
+                 <!--/>-->
+        <!--</RelativeLayout>-->
+
+        <!--//load more date to recyclerview-->
+
+    <!--</android.support.v4.widget.NestedScrollView>-->
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,79 @@
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/distance_4dp"
+    android:layout_marginRight="@dimen/distance_4dp"
+    android:layout_marginLeft="@dimen/distance_4dp"
+    android:layout_marginBottom="@dimen/standard_margin"
+    android:animateLayoutChanges="true"
+    android:layoutDirection="rtl"
+    android:orientation="vertical"
+    app:cardCornerRadius="1dp"
+    app:cardElevation="4dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/checkout_transport_item_layout_id"
+        >
+
+        <RelativeLayout
+            android:id="@+id/price_sliding_menu_triger_layout_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#4e4d4d"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true">
+            <!--android:background="@drawable/border_top_and_bottom"-->
+
+            <!--//header-->
+            <TextView
+                android:id="@+id/transporter_title_txt_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="حامل"
+                android:textColor="@color/white"
+                android:textSize="@dimen/large_font_size"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/standard_margin"
+                />
+            <TextView
+                android:id="@+id/transporter_name_txt_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lines="2"
+                android:textSize="@dimen/normal_font_size"
+                android:textColor="@color/white"
+                android:layout_below="@+id/transporter_title_txt_id"
+                android:layout_margin="@dimen/distance_4dp"
+                />
+            <!--//header-->
+
+            <!--///=====================================================================================sliding menu-->
+            <RelativeLayout
+                android:id="@+id/prices_liding_list_layout_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/transporter_name_txt_id"
+                android:animateLayoutChanges="true"
+                android:visibility="visible"
+                android:background="@color/white"
+                >
+                <!--android:background="@drawable/border_top_and_bottom"-->
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/checkout_transporter_type_prds_recycler_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+
+            </RelativeLayout>
+            <!--///=====================================================================================sliding menu-->
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

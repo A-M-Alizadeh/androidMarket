@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical|center_horizontal"
+    tools:context="com.example.aalizade.mbazar_base_app.activities.basic_parts.NoConnectionActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/offline_logo_img_id"
+            android:layout_width="46dp"
+            android:layout_height="46dp"
+            android:src="@drawable/no_wifi_ico"
+            android:layout_marginBottom="@dimen/standard_margin"
+            />
+
+        <TextView
+            android:id="@+id/error_txt_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/offline_logo_img_id"
+            android:text="خطا در اتصال به اینترنت"
+            android:layout_marginBottom="@dimen/standard_margin"
+            android:textColor="@color/primary_text_black"
+            android:textSize="@dimen/normal_font_size"
+            android:gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/probe_txt_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/error_txt_id"
+            android:text="بررسی ارتباط با اینترنت"
+            android:layout_marginBottom="@dimen/standard_margin"
+            android:textSize="@dimen/normal_font_size"
+            android:drawableRight="@drawable/check_wifi_ico"
+            android:gravity="center"
+            android:drawablePadding="2dp"
+            />
+
+        <Button
+            android:id="@+id/go_online_btn_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="تلاش مجدد"
+            android:textSize="@dimen/normal_font_size"
+            android:textColor="@color/white"
+            android:background="@drawable/buy_button_style"
+            android:paddingRight="80dp"
+            android:paddingLeft="80dp"
+            />
+    </LinearLayout>
+
+
+</RelativeLayout>

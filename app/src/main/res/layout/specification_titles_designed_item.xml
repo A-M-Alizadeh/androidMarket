@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layoutDirection="rtl"
+    >
+
+    <!--android:paddingTop="@dimen/standard_margin"-->
+    <!--android:paddingBottom="@dimen/standard_margin"-->
+    <!--android:paddingLeft="@dimen/standard_margin"-->
+    <!--android:paddingRight="@dimen/standard_margin"-->
+
+        <TextView
+            android:id="@+id/part_title_txt_id"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="جنس بند"
+            android:padding="@dimen/standard_margin"
+            android:textColor="@color/primary_text_black"
+            android:layoutDirection="rtl"
+            android:textSize="@dimen/normal_font_size"
+            android:gravity="right"
+            android:maxLines="1"
+            android:background="@color/divider"
+            />
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/specs_items_recycler_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/divider" />
+
+</LinearLayout>

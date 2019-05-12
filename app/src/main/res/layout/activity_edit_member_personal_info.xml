@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/edit_member_personal_info_mother_layout_id"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.aalizade.mbazar_base_app.activities.user.EditMemberPersonalInfoActivity">
+
+    <include
+        android:id="@+id/progress_wrapper_id"
+        layout="@layout/global_progressbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        />
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/member_editPersonalInfo_tablayout_id"
+        style="@style/MyTabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="6dp"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:tabMode="fixed"
+        android:layoutDirection="ltr"
+        app:tabSelectedTextColor="@color/colorAccent"
+        app:tabIndicatorHeight="0dp"
+        />
+
+    <com.example.aalizade.mbazar_base_app.adapters.pager_adapters.NonSwipeableViewPager
+        android:id="@+id/member_editPersonalInfo_view_pager_id"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/member_editPersonalInfo_tablayout_id"
+        android:layoutDirection="rtl"
+        />
+
+</RelativeLayout>

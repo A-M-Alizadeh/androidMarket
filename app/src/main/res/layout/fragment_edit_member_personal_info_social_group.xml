@@ -1,0 +1,105 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.aalizade.mbazar_base_app.fragments.editmemberpersonalinfo_frags.EditMemberPersonalInfo_SocialGroupFragment"
+    android:layoutDirection="rtl"
+    android:id="@+id/member_edit_social_frag_mother_layout_id"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/default_margin"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/standard_margin"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text="نام کانون :"
+                android:textColor="@color/primary_text_black"
+                android:textSize="@dimen/small_font_size" />
+
+            <TextView
+                android:id="@+id/member_info_social_group_name_TV_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/primary_text_black"
+                android:textSize="@dimen/small_font_size" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/standard_margin"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text="گرایش کانون :"
+                android:textColor="@color/primary_text_black"
+                android:textSize="@dimen/small_font_size" />
+
+            <TextView
+                android:id="@+id/member_info_social_group_trend_TV_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/primary_text_black"
+                android:textSize="@dimen/small_font_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            >
+            <Button
+                android:id="@+id/step_back_btn_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/buy_button_style"
+                android:text="قبلی"
+                android:layout_margin="1dp"
+                />
+            <Button
+                android:id="@+id/step_three_done_btn_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/buy_button_style"
+                android:text="تایید"
+                android:layout_margin="1dp"
+                />
+            <Button
+                android:id="@+id/cancel_btn_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cancel_button_style"
+                android:text="انصراف"
+                android:layout_margin="1dp"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+    <include
+        android:id="@+id/progress_wrapper_id"
+        layout="@layout/global_progressbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        />
+</FrameLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/top_part_layout_id"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#585858">
+
+        <ImageView
+            android:id="@+id/drawer_img_btn_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="@dimen/standard_margin"
+            android:src="@drawable/master_page_nav_white_ico" />
+
+        <ImageView
+            android:id="@+id/mbazar_top_logo_img_id"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="@dimen/standard_margin"
+            android:src="@drawable/logo_blackgreen" />
+
+        <TextView
+            android:id="@+id/mabazar_name_txt_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/mbazar_top_logo_img_id"
+            android:layout_marginBottom="@dimen/standard_least_distance"
+            android:layout_toRightOf="@+id/mbazar_top_logo_img_id"
+            android:text="بــازار اعضـــاء"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/mabazar_sligan_txt_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/mbazar_top_logo_img_id"
+            android:layout_marginTop="@dimen/standard_least_distance"
+            android:layout_toRightOf="@+id/mbazar_top_logo_img_id"
+            android:text="عرضه و تقاضای منصفانه و اعتماد ساز"
+            android:textColor="@color/white"
+            android:textSize="@dimen/normal_font_size" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/basic_main_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/top_part_layout_id"
+        android:background="@drawable/back_bitmap"
+        >
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

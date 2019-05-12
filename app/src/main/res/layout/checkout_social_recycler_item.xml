@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/degree_mother_item_layout_id"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingBottom="5dp"
+    android:paddingLeft="18dp"
+    android:paddingRight="18dp"
+    android:paddingTop="5dp"
+    >
+
+    <TextView
+        android:id="@+id/degree_list_level_txt_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="نام کانون"
+        android:textColor="@color/primary_text_black"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/default_margin"
+        android:layout_marginLeft="@dimen/default_margin"
+        android:textSize="@dimen/normal_font_size"
+        android:layout_alignParentRight="true"
+        />
+
+    <TextView
+        android:id="@+id/degree_list_field_txt_id"
+        android:layout_centerHorizontal="true"
+        android:layout_alignBaseline="@+id/degree_list_level_txt_id"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/default_margin"
+        android:layout_marginLeft="@dimen/default_margin"
+        android:text="کد کانون"
+        android:textColor="@color/primary_text_black"
+        android:textSize="@dimen/normal_font_size" />
+
+    <ImageView
+        android:id="@+id/checked_img_id"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/checked_black_ic"
+        android:layout_alignParentLeft="true"
+        />
+
+</RelativeLayout>

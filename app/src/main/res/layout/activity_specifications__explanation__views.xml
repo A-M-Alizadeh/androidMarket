@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/prd_specification_main_layout_id"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.aalizade.mbazar_base_app.activities.login_related.SignInLogInActivity"
+    android:layoutDirection="rtl"
+    >
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/spec_exp_views_page_toolbar_id"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimaryDark"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="مشخصات محصول"
+            android:textColor="@color/white"
+            android:textSize="@dimen/large_font_size"
+            />
+
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.design.widget.TabLayout
+        style="@style/MyTabLayout"
+        android:id="@+id/Specific_Explain_Views_tablayout_id"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="6dp"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:tabMode="fixed"
+        android:layout_below="@id/spec_exp_views_page_toolbar_id"
+        android:layoutDirection="ltr"
+        />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/Specific_Explain_Views_view_pager_id"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/Specific_Explain_Views_tablayout_id"
+        />
+    <include
+        android:id="@+id/progress_wrapper_id"
+        layout="@layout/global_progressbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+</RelativeLayout>

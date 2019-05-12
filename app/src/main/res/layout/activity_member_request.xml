@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="50dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/card_view_sample"
+        android:id="@+id/social_container"
+        >
+
+        <LinearLayout
+            android:id="@+id/trend_social_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="6dp"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="گرایش کانون"
+                android:layout_weight="1"
+                android:gravity="center"
+                />
+            <Spinner
+                android:id="@+id/member_request_social_trend"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layoutDirection="rtl"
+                android:background="@drawable/spinner_border"
+                android:padding="2dp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/name_social_container"
+            android:layout_below="@id/trend_social_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="6dp"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="نام کانون"
+                android:layout_weight="1"
+                android:gravity="center"
+                />
+            <Spinner
+                android:id="@+id/member_request_social_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layoutDirection="rtl"
+                android:background="@drawable/spinner_border"
+                android:padding="2dp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/code_social_container"
+            android:layout_below="@id/name_social_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="6dp"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="کد کانون"
+                android:layout_weight="1"
+                android:gravity="center"
+                />
+            <EditText
+                android:id="@+id/member_request_social_code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/section_border"
+                android:padding="3dp"
+                />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/social_container"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="80dp"
+        >
+
+        <Button
+            android:id="@+id/reject"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="انصراف"
+            android:background="@drawable/cancel_button_border"
+            android:textColor="@color/depricated_price"
+            android:layout_margin="5dp"
+            />
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="تایید"
+            android:textColor="@color/current_price"
+            android:background="@drawable/submit_button_border"
+            android:layout_margin="5dp"
+            />
+    </LinearLayout>
+
+
+    <include
+        android:id="@+id/progress_wrapper_id"
+        layout="@layout/global_progressbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+</RelativeLayout>

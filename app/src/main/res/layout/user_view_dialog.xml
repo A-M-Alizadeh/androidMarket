@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="rtl"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="@dimen/default_margin"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="امتیاز شما به این کالا"
+            android:textSize="@dimen/small_font_size"
+            android:textColor="@color/black"
+            />
+
+        <com.iarcuschin.simpleratingbar.SimpleRatingBar
+            android:id="@+id/prd_rateBar_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srb_borderColor="@color/white"
+            app:srb_fillColor="@color/star_full_color"
+            app:srb_isIndicator="false"
+            app:srb_numberOfStars="5"
+            app:srb_rating="3.5"
+            app:srb_starBackgroundColor="@color/star_empty_color"
+            app:srb_starSize="25dp"
+            app:srb_starsSeparation="1dp"
+            app:srb_stepSize="0.5" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/dialog_enter_you_view_txtv_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="برای وارد کردن نظر اینجا کلیک کنید !"
+        android:gravity="center"
+        android:textColor="@color/before_buy_btn_color2"
+        android:textSize="@dimen/small_font_size"
+        android:layout_margin="@dimen/standard_margin"
+        android:textStyle="bold"
+        />
+
+    <LinearLayout
+        android:id="@+id/user_view_inputs_layout_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        >
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/user_view_dialog_tiet_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/standard_margin"
+            android:layout_marginBottom="@dimen/standard_margin"
+            >
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/user_view_dialog_tietusername_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableRight="@drawable/username_gray_ic"
+                android:hint="نام کاربری"
+                android:inputType="textPassword"
+                />
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/user_view_dialog_View_title_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/standard_margin"
+            android:layout_marginBottom="@dimen/standard_margin"
+            >
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/user_view_dialog_View_title_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableRight="@drawable/username_gray_ic"
+                android:hint="تیتر"
+                android:inputType="text"
+                android:textSize="@dimen/small_font_size"
+                />
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/user_view_dialog_View_comment_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/standard_margin"
+            android:layout_marginBottom="@dimen/standard_margin"
+            >
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/user_view_dialog_View_comment_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableRight="@drawable/username_gray_ic"
+                android:hint="نظر خود را بنویسید"
+                android:inputType="text"
+                android:textSize="@dimen/small_font_size"
+                />
+        </android.support.design.widget.TextInputLayout>
+    </LinearLayout>
+
+    <!--//submit_view_btn-->
+    <Button
+        android:id="@+id/view_submit_btn_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:layout_weight="1"
+        android:textColor="@color/white"
+        android:background="@drawable/buy_button_style"
+        android:foreground="?attr/selectableItemBackground"
+        android:text="ثبت"
+        android:textSize="@dimen/normal_font_size" />
+    <!--//submit_view_btn-->
+
+</LinearLayout>

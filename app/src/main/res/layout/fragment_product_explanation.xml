@@ -1,0 +1,31 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.aalizade.mbazar_base_app.fragments.ProductExplanationFragment"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/default_margin"
+            android:gravity="right"
+            android:lineSpacingExtra="8dp"
+            android:text="@string/explanation_text"
+            android:textSize="@dimen/normal_font_size"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"/>
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

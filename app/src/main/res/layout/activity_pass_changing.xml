@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="rtl"
+    android:orientation="vertical"
+    tools:context="com.example.aalizade.mbazar_base_app.activities.login_related.PassChangingActivity"
+    android:id="@+id/pass_changing_mother_layout_id"
+    >
+
+    <include
+        android:id="@+id/progress_wrapper_id"
+        layout="@layout/global_progressbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/default_margin"
+        android:layout_marginLeft="@dimen/default_margin"
+        android:layout_marginRight="@dimen/default_margin"
+        android:orientation="vertical"
+        >
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/current_pass_tiet_layout_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/standard_margin"
+            android:layout_marginTop="@dimen/standard_margin">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/current_tietpassword_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="رمز عبور فعلی"
+                android:inputType="textPassword"
+                android:maxLength="20"
+                android:textSize="@dimen/small_font_size" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/new_pass_tiet_layout_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/standard_margin"
+            android:layout_marginTop="@dimen/standard_margin">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/new_tietpassword_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="رمز عبور جدید"
+                android:inputType="textPassword"
+                android:maxLength="20"
+                android:textSize="@dimen/small_font_size" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/new_pass_repeat_tiet_layout_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/standard_margin"
+            android:layout_marginTop="@dimen/standard_margin">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/new_pass_repeat_tiet_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="تکرار رمز عبور جدید"
+                android:inputType="textPassword"
+                android:maxLength="20"
+                android:textSize="@dimen/small_font_size" />
+        </android.support.design.widget.TextInputLayout>
+
+        <!--//buy_btn-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/pass_change_submit_btn_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/standard_margin"
+                android:layout_marginLeft="@dimen/standard_margin"
+                android:layout_marginRight="@dimen/standard_margin"
+                android:layout_marginTop="@dimen/standard_margin"
+                android:layout_weight="1"
+                android:background="@drawable/buy_button_style"
+                android:foreground="?attr/selectableItemBackground"
+                android:text="تایید"
+                android:textColor="@color/white"
+                android:textSize="@dimen/normal_font_size" />
+
+            <Button
+                android:id="@+id/cancel_btn_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/standard_margin"
+                android:layout_marginLeft="@dimen/standard_margin"
+                android:layout_marginRight="@dimen/standard_margin"
+                android:layout_marginTop="@dimen/standard_margin"
+                android:layout_weight="1"
+                android:background="@drawable/cancel_button_style"
+                android:foreground="?attr/selectableItemBackground"
+                android:text="انصراف"
+                android:textColor="@color/white"
+                android:textSize="@dimen/normal_font_size" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical"
+    android:layoutDirection="rtl">
+
+    <TextView
+        android:id="@+id/attribute_title_txt_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_margin="@dimen/distance_4dp"
+        android:layout_weight="3"
+        android:maxLines="1"
+        android:text="عنوان فیلتر"
+        android:textColor="@color/primary_text_black"
+        android:textSize="@dimen/normal_font_size" />
+
+    <Spinner
+        android:id="@+id/attribute_values_spinner_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/distance_4dp"
+        android:layout_marginLeft="@dimen/default_margin"
+        android:layout_marginRight="@dimen/default_margin"
+        android:layout_marginTop="@dimen/distance_4dp"
+        android:layout_weight="1"
+        android:background="@drawable/spinner_border"
+        android:entries="@array/product_producer_colors"
+        android:paddingLeft="@dimen/default_margin"
+        android:paddingRight="@dimen/default_margin" />
+
+</LinearLayout>

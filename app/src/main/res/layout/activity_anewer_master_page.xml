@@ -1,0 +1,499 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/masterPage_mother_drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgrnd"
+    android:focusable="true"
+    android:layoutDirection="rtl"
+    tools:context="com.example.aalizade.mbazar_base_app.activities.basic_parts.AnewerMasterPageActivity">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/demo_page_container_layout_id"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/back_bitmap"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/swip_refresh_layout_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <!--//tiles-->
+            <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/masterpage_scrollview_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="?attr/actionBarSize">
+
+                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/mother_layout_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/back_bitmap"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:id="@+id/top_part_layout_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="?attr/actionBarSize"
+                        android:background="#585858"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/drawer_img_btn_id"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_margin="@dimen/standard_margin"
+                            android:src="@drawable/master_page_nav_white_ico" />
+
+                        <ImageView
+                            android:id="@+id/mbazar_top_logo_img_id"
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_margin="@dimen/standard_margin"
+                            android:src="@drawable/logo_blackgreen" />
+
+                        <TextView
+                            android:id="@+id/mabazar_name_txt_id"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@+id/mbazar_top_logo_img_id"
+                            android:layout_marginBottom="@dimen/standard_least_distance"
+                            android:layout_toRightOf="@+id/mbazar_top_logo_img_id"
+                            android:text="بــازار اعضـــاء"
+                            android:textColor="@color/white"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/mabazar_sligan_txt_id"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@+id/mbazar_top_logo_img_id"
+                            android:layout_marginTop="@dimen/standard_least_distance"
+                            android:layout_toRightOf="@+id/mbazar_top_logo_img_id"
+                            android:text="عرضه و تقاضای منصفانه و اعتماد ساز"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/normal_font_size" />
+                    </RelativeLayout>
+
+                    <ss.com.bannerslider.views.BannerSlider
+                        android:id="@+id/banner_slider"
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp"
+                        android:layoutDirection="ltr"
+                        app:animateIndicators="true"
+                        app:defaultBanner="1"
+                        app:defaultIndicators="round_square"
+                        app:emptyView="@drawable/mbazar_128p_gray_logo"
+                        app:indicatorSize="4dp"
+                        app:interval="3000"
+                        app:loopSlides="true" />
+
+                    <LinearLayout
+                        android:id="@+id/all_departments_layout_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="?attr/actionBarSize"
+                        android:layout_margin="@dimen/standard_least_distance"
+                        android:background="@drawable/layout_round_corner"
+                        android:gravity="center">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="همه دپارتمان ها"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/large_font_size"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+                        <!--//right side-->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:orientation="vertical">
+
+                            <android.support.v7.widget.CardView
+                                android:id="@+id/masterpage_bon_hedie_layout_id"
+                                android:layout_width="match_parent"
+                                android:layout_height="80dp"
+                                android:layout_gravity="center"
+                                android:layout_margin="@dimen/standard_least_distance"
+                                android:elevation="@dimen/distance_4dp"
+                                app:cardBackgroundColor="#af6b8c"
+                                app:cardCornerRadius="1dp"
+                                app:cardElevation="@dimen/standard_least_distance">
+
+                                <!--<RelativeLayout-->
+                                <!--android:layout_width="match_parent"-->
+                                <!--android:layout_height="80dp"-->
+                                <!--android:layout_alignParentEnd="true"-->
+                                <!--android:layout_alignParentTop="true"-->
+                                <!--android:layout_marginTop="250dp"-->
+                                <!--android:background="#af6b8c">-->
+
+                                <!--<TextView-->
+                                <!--android:layout_width="wrap_content"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:layout_centerInParent="true"-->
+                                <!--android:layout_marginBottom="@dimen/distance_4dp"-->
+                                <!--android:text="بن هدیه"-->
+                                <!--android:textColor="@color/white"-->
+                                <!--android:textSize="@dimen/large_font_size"-->
+                                <!--android:textStyle="bold" />-->
+                                <!--</RelativeLayout>-->
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="80dp"
+                                    android:background="#af6b8c">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerInParent="true"
+                                        android:layout_marginBottom="@dimen/distance_4dp"
+                                        android:text="بن هدیه
+"
+                                        android:textColor="@color/white"
+                                        android:textSize="@dimen/large_font_size"
+                                        android:textStyle="bold" />
+                                </RelativeLayout>
+
+
+                            </android.support.v7.widget.CardView>
+
+                            <android.support.v7.widget.CardView
+                                android:id="@+id/masterpage_etebar_layout_id"
+                                android:layout_width="match_parent"
+                                android:layout_height="80dp"
+                                android:layout_gravity="center"
+                                android:layout_margin="@dimen/standard_least_distance"
+                                android:elevation="@dimen/distance_4dp"
+                                app:cardBackgroundColor="#af6b8c"
+                                app:cardCornerRadius="1dp"
+                                app:cardElevation="@dimen/standard_least_distance">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="80dp"
+                                    android:background="#af6b8c">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerInParent="true"
+                                        android:layout_marginBottom="@dimen/distance_4dp"
+                                        android:text="اعتبار کاربری"
+                                        android:textColor="@color/white"
+                                        android:textSize="@dimen/large_font_size"
+                                        android:textStyle="bold" />
+                                </RelativeLayout>
+                            </android.support.v7.widget.CardView>
+
+                        </LinearLayout>
+                        <!--//right side-->
+                        <!--//center-->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2">
+
+                            <android.support.v7.widget.CardView
+                                android:id="@+id/masterpage_buy_from_mbazar_layout_id"
+                                android:layout_width="match_parent"
+                                android:layout_height="160dp"
+                                android:layout_gravity="center"
+                                android:layout_margin="@dimen/standard_least_distance"
+                                android:elevation="@dimen/distance_4dp"
+                                app:cardBackgroundColor="#808c8c"
+                                app:cardCornerRadius="1dp"
+                                app:cardElevation="@dimen/standard_least_distance">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="160dp"
+                                    android:gravity="center">
+
+                                    <ImageView
+                                        android:layout_width="64dp"
+                                        android:layout_height="64dp"
+                                        android:layout_above="@+id/buy_from_mbazar_tv_id"
+                                        android:layout_centerHorizontal="true"
+                                        android:src="@drawable/shopping_img" />
+
+                                    <TextView
+                                        android:id="@+id/buy_from_mbazar_tv_id"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerHorizontal="true"
+                                        android:layout_centerInParent="true"
+                                        android:layout_marginBottom="@dimen/distance_4dp"
+                                        android:text="خرید از بازار اعضا"
+                                        android:textColor="@color/white"
+                                        android:textSize="@dimen/large_font_size"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:id="@+id/selected_city_name_txt_id"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_below="@+id/buy_from_mbazar_tv_id"
+                                        android:layout_centerHorizontal="true"
+                                        android:layout_centerInParent="true"
+                                        android:layout_marginBottom="@dimen/distance_4dp"
+                                        android:text="کرمان"
+                                        android:textColor="@color/primary_text_black"
+                                        android:textSize="@dimen/normal_font_size"
+                                        android:textStyle="bold"
+                                        android:visibility="gone" />
+                                </RelativeLayout>
+
+                            </android.support.v7.widget.CardView>
+                        </LinearLayout>
+                        <!--//center-->
+                        <!--//left side-->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:orientation="vertical">
+
+                            <android.support.v7.widget.CardView
+                                android:id="@+id/masterpage_nesie_layout_id"
+                                android:layout_width="match_parent"
+                                android:layout_height="80dp"
+                                android:layout_gravity="center"
+                                android:layout_margin="@dimen/standard_least_distance"
+                                android:elevation="@dimen/distance_4dp"
+                                app:cardBackgroundColor="#af6b8c"
+                                app:cardCornerRadius="1dp"
+                                app:cardElevation="@dimen/standard_least_distance">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="80dp"
+                                    android:background="#af6b8c">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerInParent="true"
+                                        android:layout_marginBottom="@dimen/distance_4dp"
+                                        android:text="نسیه"
+                                        android:textColor="@color/white"
+                                        android:textSize="@dimen/large_font_size"
+                                        android:textStyle="bold" />
+                                </RelativeLayout>
+                            </android.support.v7.widget.CardView>
+
+                            <android.support.v7.widget.CardView
+                                android:id="@+id/masterpage_nesie_aghsat_layout_id"
+                                android:layout_width="match_parent"
+                                android:layout_height="80dp"
+                                android:layout_gravity="center"
+                                android:layout_margin="@dimen/standard_least_distance"
+                                android:elevation="@dimen/distance_4dp"
+                                app:cardBackgroundColor="#af6b8c"
+                                app:cardCornerRadius="1dp"
+                                app:cardElevation="@dimen/standard_least_distance">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="80dp"
+                                    android:background="#af6b8c">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerInParent="true"
+                                        android:layout_marginBottom="@dimen/distance_4dp"
+                                        android:text="نسیه اقساط"
+                                        android:textColor="@color/white"
+                                        android:textSize="@dimen/large_font_size"
+                                        android:textStyle="bold" />
+                                </RelativeLayout>
+                            </android.support.v7.widget.CardView>
+
+                        </LinearLayout>
+                        <!--//left side-->
+                    </LinearLayout>
+
+                    <!--//third row ============================================================ -->
+
+                    <!--//fourth row ============================================================ -->
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_marginBottom="@dimen/standard_least_distance"
+                        android:layout_marginLeft="@dimen/standard_least_distance"
+                        android:layout_marginRight="@dimen/standard_least_distance"
+                        android:layout_marginTop="@dimen/distance_4dp"
+                        android:background="#808c8c" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/standard_margin"
+                        android:layout_marginLeft="@dimen/default_margin"
+                        android:layout_marginRight="@dimen/default_margin"
+                        android:layout_marginTop="@dimen/standard_margin"
+                        android:text="دپارتمان های ویژه"
+                        android:textSize="@dimen/large_font_size"
+                        android:textStyle="bold" />
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/departments_horizontal_recycler_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/standard_margin"
+                        android:layout_marginLeft="@dimen/default_margin"
+                        android:layout_marginRight="@dimen/default_margin"
+                        android:layout_marginTop="@dimen/standard_margin"
+                        android:text="طرح های ویژه"
+                        android:textSize="@dimen/large_font_size"
+                        android:textStyle="bold" />
+
+                    <!--grid recycler tetxt views for plans-->
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/grid_plans_recycler_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <com.example.aalizade.mbazar_base_app.utility.customComponents.CustomHorizontalProductRecyclerview
+                        android:id="@+id/lifeandwork_products_recycler_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        />
+
+                    <com.example.aalizade.mbazar_base_app.utility.customComponents.CustomHorizontalProductRecyclerview
+                        android:id="@+id/special_products_recycler_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="?attr/actionBarSize"/>
+
+            </LinearLayout>
+
+            </ScrollView>
+            <!--//tiles-->
+
+        </android.support.v4.widget.SwipeRefreshLayout>
+        <!--//bottom part-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_alignParentBottom="true"
+            android:background="#585858"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_weight="1"
+                android:gravity="center_horizontal|center_vertical">
+
+                <TextView
+                    android:id="@+id/loging_txt_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:text="ورود |"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/large_font_size"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/register_bottom_btn_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignBaseline="@+id/loging_txt_id"
+                    android:layout_toLeftOf="@+id/loging_txt_id"
+                    android:gravity="center"
+                    android:text="ثبت نام"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/small_font_size" />
+
+                <TextView
+                    android:id="@+id/user_fullname_txt_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignBaseline="@+id/loging_txt_id"
+                    android:layout_toLeftOf="@+id/loging_txt_id"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/small_font_size"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/help_txt_btn_id"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="راهنما"
+                android:textColor="@color/white"
+                android:textSize="@dimen/large_font_size"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/standard_margin"
+            android:src="@drawable/logo_black_green_128" />
+
+        <!--//bottom part-->
+    </RelativeLayout>
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/masterPage_nav_view"
+        android:layout_width="250dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@color/opacity_dark_gradient_color"
+        app:headerLayout="@layout/nav_header"
+        app:menu="@menu/masterpage_navigtion_drawer_menu">
+
+    </android.support.design.widget.NavigationView>
+
+    <include
+        android:id="@+id/progress_wrapper_id"
+        layout="@layout/global_progressbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+</android.support.v4.widget.DrawerLayout>
+

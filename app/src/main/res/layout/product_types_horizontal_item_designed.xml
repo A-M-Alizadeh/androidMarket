@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp"
+    app:cardElevation="2dp"
+    app:cardCornerRadius="2dp"
+    android:foreground="?attr/selectableItemBackgroundBorderless"
+    app:cardBackgroundColor="@color/colorPrimary"
+    android:id="@+id/card_id"
+    >
+
+    <RelativeLayout
+        android:clickable="true"
+        android:foreground="?attr/selectableItemBackgroundBorderless"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/touch_layout_id"
+        android:background="@drawable/full__backgrnd_border"
+        >
+
+        <TextView
+            android:id="@+id/type_name_txt_id"
+            android:text="دسته اول نوع اول"
+            android:maxLines="2"
+            android:lineSpacingExtra="@dimen/standard_margin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/distance_4dp"
+            android:textSize="@dimen/normal_font_size"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:ellipsize="end"
+            />
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

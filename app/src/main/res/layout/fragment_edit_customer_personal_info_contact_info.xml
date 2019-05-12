@@ -1,0 +1,152 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/customer_edit_contact_frag_mother_layout_id"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.aalizade.mbazar_base_app.fragments.editmemberpersonalinfo_frags.EditMemberPersonalInfo_ContactInfoFragment">
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="100dp"
+            >
+
+            <AutoCompleteTextView
+                android:id="@+id/edit_contactInfo_auto_tiet_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/standard_margin"
+                android:hint="شهر"
+                android:inputType="text"
+                android:textSize="@dimen/small_font_size" />
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/edit_contactInfo_address_tiet_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/standard_margin"
+                android:hint="آدرس"
+                android:lines="4"
+                android:maxLength="100"
+                android:maxLines="4"
+                android:textSize="@dimen/small_font_size" />
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/edit_contactInfo_postalCode_tiet_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/standard_margin"
+                android:hint="کدپستی"
+                android:maxLength="10"
+                android:inputType="numberDecimal"
+                android:textSize="@dimen/small_font_size" />
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/edit_contactInfo_email_tiet_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/standard_margin"
+                android:hint="پست الکترونیک"
+                android:textSize="@dimen/small_font_size" />
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/edit_contactInfo_mobileNum_ET_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/standard_margin"
+                android:inputType="numberDecimal"
+                android:hint="تلفن همراه"
+                android:textSize="@dimen/small_font_size"
+                android:maxLength="11"
+                />
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/edit_contactInfo_phonenumber_tiet_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/standard_margin"
+                android:hint="تلفن ثابت"
+                android:inputType="numberDecimal"
+                android:maxLength="8"
+                android:textSize="@dimen/small_font_size" />
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/edit_contactInfo_workAddress_tiet_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/standard_margin"
+                android:hint="نشانی محل کار"
+                android:lines="4"
+                android:maxLength="100"
+                android:maxLines="4"
+                android:textSize="@dimen/small_font_size" />
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/edit_contactInfo_workpostalCode_tiet_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/standard_margin"
+                android:hint="کدپستی محل کار"
+                android:inputType="numberDecimal"
+                android:maxLength="10"
+                android:textSize="@dimen/small_font_size" />
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/edit_contactInfo_workPhone_tiet_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/standard_margin"
+                android:hint="تلفن محل کار"
+                android:inputType="numberDecimal"
+                android:maxLength="8"
+                android:textSize="@dimen/small_font_size" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                >
+                <Button
+                    android:id="@+id/step_back_btn_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/buy_button_style"
+                    android:text="قبلی"
+                    android:layout_margin="1dp"
+                    />
+                <Button
+                    android:id="@+id/step_three_done_btn_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/buy_button_style"
+                    android:text="تایید"
+                    android:layout_margin="1dp"
+                    />
+                <Button
+                    android:id="@+id/cancel_btn_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/cancel_button_style"
+                    android:text="انصراف"
+                    android:layout_margin="1dp"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <include
+        android:id="@+id/progress_wrapper_id"
+        layout="@layout/global_progressbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+</FrameLayout>

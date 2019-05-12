@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_bitmap"
+    android:layoutDirection="rtl"
+    tools:context="com.example.aalizade.mbazar_base_app.activities.login_related.ProfileActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/profile_appbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/profile_collapse_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:layoutDirection="rtl"
+            app:collapsedTitleTextAppearance="@style/MyPRDTitleApperance"
+            app:contentScrim="@color/colorPrimary"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:titleEnabled="false">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="240dp"
+                android:layout_gravity="center"
+                android:background="@drawable/accent_color_gradient"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/header_profile_img"
+                    android:layout_width="128dp"
+                    android:layout_height="128dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="@dimen/standard_margin_X2"
+                    android:src="@drawable/profile"
+                    app:civ_border_color="@color/colorAccent"
+                    app:civ_border_width="2dp" />
+
+                <TextView
+                    android:id="@+id/user_username_profile_txt_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="am_alizadeh74@yahoo.com"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/large_font_size"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/user_name_profile_txt_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="علی محمد علیزاده"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/large_font_size"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/profile_page_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_marginBottom="2dp"
+                android:layoutDirection="ltr"
+                android:paddingRight="20dp"
+                app:layout_collapseMode="pin">
+
+            </android.support.v7.widget.Toolbar>
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+    </android.support.design.widget.AppBarLayout>
+    <!--//divid-->
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <android.support.v7.widget.GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:columnCount="2"
+            app:rowCount="5"
+            android:layout_marginTop="@dimen/standard_margin"
+            >
+
+            <Button
+                android:id="@+id/profile_pass_change_btn_id"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_columnWeight="1"
+                android:layout_margin="4dp"
+                android:background="@drawable/wide_round_profile_button_shape"
+                android:text="تغییر رمز عبور"
+                android:textColor="@color/white"
+                android:textSize="@dimen/large_font_size" />
+
+            <Button
+                android:id="@+id/profile_show_personalInfo_btn_id"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_columnWeight="1"
+                android:layout_margin="4dp"
+                android:background="@drawable/wide_round_profile_button_shape"
+                android:text="مشاهده مشخصات فردی"
+                android:textColor="@color/white"
+                android:textSize="@dimen/large_font_size" />
+            <Button
+                android:id="@+id/profile_edit_personalInfo_btn_id"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_columnWeight="1"
+                android:layout_margin="4dp"
+                android:background="@drawable/wide_round_profile_button_shape"
+                android:text="ویرایش مشخصات فردی"
+                android:textColor="@color/white"
+                android:textSize="@dimen/large_font_size" />
+
+            <Button
+                android:id="@+id/profile_contactInfo_btn_id"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_columnWeight="1"
+                android:layout_margin="4dp"
+                android:background="@drawable/wide_round_profile_button_shape"
+                android:text="اطلاعات تماس"
+                android:textColor="@color/white"
+                android:textSize="@dimen/large_font_size" />
+            <Button
+                android:id="@+id/profile_orders_btn_id"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_columnWeight="1"
+                android:layout_margin="4dp"
+                android:background="@drawable/wide_round_profile_button_shape"
+                android:text="سفارشات"
+                android:textColor="@color/white"
+                android:textSize="@dimen/large_font_size" />
+
+            <Button
+                android:id="@+id/profile_credits_btn_id"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_columnWeight="1"
+                android:layout_margin="4dp"
+                android:background="@drawable/wide_round_profile_button_shape"
+                android:text="اعتبارات"
+                android:textColor="@color/white"
+                android:textSize="@dimen/large_font_size" />
+            <Button
+                android:id="@+id/profile_membershipReq_btn_id"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_columnWeight="1"
+                android:layout_margin="4dp"
+                android:background="@drawable/wide_round_profile_button_shape"
+                android:text="درخواست عضویت"
+                android:textColor="@color/white"
+                android:textSize="@dimen/large_font_size" />
+            <Button
+                android:id="@+id/profile_orgenizations_btn_id"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_columnWeight="1"
+                android:layout_margin="4dp"
+                android:background="@drawable/wide_round_profile_button_shape"
+                android:text="کانون ها"
+                android:textColor="@color/white"
+                android:textSize="@dimen/large_font_size" />
+
+        </android.support.v7.widget.GridLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+</android.support.design.widget.CoordinatorLayout>
+

@@ -1,0 +1,37 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.example.aalizade.mbazar_base_app.fragments.DepartmentGlobalFragment">
+
+        <RelativeLayout
+            android:id="@+id/wrapper_relative_layout_id"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@+id/conteiner_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/department_imgView_id"
+                android:layout_width="256dp"
+                android:layout_height="256dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginBottom="@dimen/distance_4dp"
+                android:paddingBottom="@dimen/distance_4dp"
+                android:paddingLeft="@dimen/distance_4dp" />
+        </RelativeLayout>
+
+
+</FrameLayout>

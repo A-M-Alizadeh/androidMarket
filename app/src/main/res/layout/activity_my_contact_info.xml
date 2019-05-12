@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.aalizade.mbazar_base_app.activities.user.MyContactInfoActivity"
+    android:orientation="vertical"
+    android:layoutDirection="rtl"
+    android:id="@+id/mycontactinfo_mother_layout_id"
+    >
+
+    <include
+        android:id="@+id/progress_wrapper_id"
+        layout="@layout/global_progressbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        />
+
+    <ScrollView
+        android:id="@+id/caontactinfo_scrollview_id"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/mycontactInfo_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:listItem="@layout/my_contactinfo_recycler_items"
+            android:paddingBottom="60dp"
+            >
+
+        </android.support.v7.widget.RecyclerView>
+    </ScrollView>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/add_mycontactinfo_info_fab_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_margin="4dp"
+        android:layout_marginTop="@dimen/default_margin"
+        android:src="@drawable/add_ic"
+        app:fabSize="normal" />
+
+</FrameLayout>

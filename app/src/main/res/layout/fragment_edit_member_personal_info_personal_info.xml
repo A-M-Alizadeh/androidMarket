@@ -1,0 +1,512 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.aalizade.mbazar_base_app.fragments.editmemberpersonalinfo_frags.EditMemberPersonalInfo_PersonalInfoFragment"
+    android:id="@+id/EditMemberPersonalInfo_PersonalInfoFragment_mother_layout_id">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/default_margin"
+            android:columnCount="2"
+            android:orientation="vertical"
+            android:paddingBottom="100dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="کلمه کاربری :"
+                    android:textColor="@color/secondary_text_gray"
+                    android:textSize="@dimen/small_font_size" />
+                <TextView
+                    android:id="@+id/member_edit_PI_username_txt_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:textColor="@color/primary_text_black"
+                    android:textSize="@dimen/small_font_size" />
+            </LinearLayout>
+            <!--//username-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="نام :"
+                    android:textColor="@color/secondary_text_gray"
+                    android:textSize="@dimen/small_font_size" />
+
+                <EditText
+                    android:id="@+id/member_edit_PI_name_et_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:inputType="text"
+                    android:textSize="@dimen/small_font_size"
+                    android:maxLength="40"
+                    />
+            </LinearLayout>
+            <!--//name-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="نام خانوادگی :"
+                    android:textColor="@color/secondary_text_gray"
+                    android:textSize="@dimen/small_font_size" />
+
+                <EditText
+                    android:id="@+id/member_edit_PI_lastname_et_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:inputType="text"
+                    android:textSize="@dimen/small_font_size"
+                    android:maxLength="40"
+                    />
+            </LinearLayout>
+            <!--//last name-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="نام پدر :"
+                    android:textColor="@color/secondary_text_gray"
+                    android:textSize="@dimen/small_font_size" />
+
+                <EditText
+                    android:id="@+id/member_edit_PI_fathername_et_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:inputType="text"
+                    android:textSize="@dimen/small_font_size"
+                    android:maxLength="40"
+                    />
+            </LinearLayout>
+            <!--//father name-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="کد ملی :"
+                    android:textColor="@color/secondary_text_gray"
+                    android:textSize="@dimen/small_font_size" />
+
+                <EditText
+                    android:id="@+id/member_edit_PI_nationalCode_et_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:inputType="numberDecimal"
+                    android:textSize="@dimen/small_font_size"
+                    android:maxLength="10"
+                    />
+            </LinearLayout>
+            <!--//national code-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="شماره شناسنامه :"
+                    android:textColor="@color/secondary_text_gray"
+                    android:textSize="@dimen/small_font_size" />
+
+                <EditText
+                    android:id="@+id/member_edit_PI_shenasnameCode_et_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:inputType="numberDecimal"
+                    android:textSize="@dimen/small_font_size"
+                    android:maxLength="10"
+                    />
+            </LinearLayout>
+            <!--//shenasname-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="سریال شناسنامه :"
+                    android:textColor="@color/secondary_text_gray"
+                    android:textSize="@dimen/small_font_size" />
+
+                <EditText
+                    android:id="@+id/member_edit_PI_shenasnameSerial_et_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:inputType="numberDecimal"
+                    android:textSize="@dimen/small_font_size"
+                    android:maxLength="40"
+                    />
+            </LinearLayout>
+            <!--//serial shenasname-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="محل صدور :"
+                    android:textColor="@color/secondary_text_gray"
+                    android:textSize="@dimen/small_font_size" />
+
+                <AutoCompleteTextView
+                    android:id="@+id/member_edit_PI_shenasnameTown_autoTV_id"
+                    android:layout_width="match_parent"
+                    android:completionThreshold="2"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:inputType="text"
+                    android:textSize="@dimen/small_font_size"
+                    android:maxLength="40"
+                    />
+            </LinearLayout>
+
+            <!--//hometown-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="محل تولد :"
+                    android:textColor="@color/secondary_text_gray"
+                    android:textSize="@dimen/small_font_size" />
+
+                <AutoCompleteTextView
+                    android:id="@+id/member_edit_PI_birthTown_autoTV_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:inputType="text"
+                    android:textSize="@dimen/small_font_size"
+                    android:maxLength="40"
+                    />
+            </LinearLayout>
+
+            <!--//birth place-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="@dimen/standard_margin"
+                android:layout_marginTop="@dimen/standard_margin"
+                >
+                <TextView
+                    android:id="@+id/date_picker_test_clicker_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="تاریخ تولد :"
+                    android:textColor="@color/secondary_text_gray"
+                    android:textSize="@dimen/small_font_size" />
+
+                <TextView
+                    android:id="@+id/member_register_PI_birthDate_TV_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="----/--/--"
+                    android:textColor="@color/primary_text_black"
+                    android:textSize="@dimen/small_font_size" />
+
+                <!--<EditText-->
+                <!--android:id="@+id/member_edit_PI_birthDate_autoTV_id"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_weight="1"-->
+                <!--android:inputType="text"-->
+                <!--android:textSize="@dimen/small_font_size"-->
+                <!--android:maxLength="40"-->
+                <!--/>-->
+            </LinearLayout>
+
+            <!--//birth date-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="جنسیت :"
+                    android:textColor="@color/secondary_text_gray"
+                    android:textSize="@dimen/small_font_size" />
+
+                <Spinner
+                    android:id="@+id/member_edit_PI_gender_spinner_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:inputType="text"
+                    android:textSize="@dimen/small_font_size" />
+            </LinearLayout>
+
+            <!--//job-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="شغل :"
+                    android:textColor="@color/secondary_text_gray"
+                    android:textSize="@dimen/small_font_size" />
+
+                <!--<ir.smartlab.persindatepicker.PersianDatePicker-->
+                <!--android:id="@+id/member_edit_PI_birthDate_date_picker_id"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_columnWeight="1"-->
+                <!--/>-->
+
+                <EditText
+                    android:id="@+id/member_edit_PI_job_ET_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:inputType="text"
+                    android:textSize="@dimen/small_font_size"
+                    android:maxLength="40"
+                    />
+            </LinearLayout>
+
+            <!--//company-->
+            <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="horizontal"-->
+            <!--&gt;-->
+            <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="1"-->
+            <!--android:gravity="right"-->
+            <!--android:text="محل کار/سازمان :"-->
+            <!--android:textColor="@color/secondary_text_gray"-->
+            <!--android:textSize="@dimen/small_font_size" />-->
+
+            <!--&lt;!&ndash;<ir.smartlab.persindatepicker.PersianDatePicker&ndash;&gt;-->
+            <!--&lt;!&ndash;android:id="@+id/member_edit_PI_birthDate_date_picker_id"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_columnWeight="1"&ndash;&gt;-->
+            <!--&lt;!&ndash;/>&ndash;&gt;-->
+
+            <!--<EditText-->
+            <!--android:id="@+id/member_edit_PI_company_ET_id"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="1"-->
+            <!--android:hint="محل کار/سازمان"-->
+            <!--android:inputType="text"-->
+            <!--android:textSize="@dimen/small_font_size"-->
+            <!--android:maxLength="40"-->
+            <!--/>-->
+            <!--</LinearLayout>-->
+
+            <!--//gender-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="وضعیت تاهل :"
+                    android:textColor="@color/secondary_text_gray"
+                    android:textSize="@dimen/small_font_size" />
+
+                <Spinner
+                    android:id="@+id/marriage_status_spinner_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:inputType="text"
+                    android:textSize="@dimen/small_font_size" />
+            </LinearLayout>
+
+
+            <!--<AutoCompleteTextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_columnWeight="1"-->
+            <!--android:inputType="text"-->
+            <!--android:text="اسپینر"-->
+            <!--android:textSize="@dimen/small_font_size" />-->
+            <!--//marriage status-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="علاقه مندی :"
+                    android:textColor="@color/secondary_text_gray"
+                    android:textSize="@dimen/small_font_size" />
+
+                <AutoCompleteTextView
+                    android:id="@+id/member_edit_PI_interest_et_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:inputType="text"
+                    android:textSize="@dimen/small_font_size"
+                    android:maxLength="40"
+                    />
+            </LinearLayout>
+
+            <!--//interests-->
+
+            <!--//bottom part-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnSpan="2"
+                android:gravity="right"
+                android:text="اطلاعات تحصیلی"
+                android:textColor="@color/primary_text_black"
+                android:textSize="@dimen/normal_font_size" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_columnSpan="2"
+                android:layout_marginBottom="@dimen/standard_margin"
+                android:layout_marginTop="@dimen/standard_margin"
+                android:background="@color/divider"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/standard_margin"
+                android:paddingTop="@dimen/standard_margin">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="مقطع تحصیلی"
+                    android:textColor="@color/primary_text_black"
+                    android:textSize="@dimen/normal_font_size" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="رشته تحصیلی"
+                    android:textColor="@color/primary_text_black"
+                    android:textSize="@dimen/normal_font_size" />
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/degree_recycler_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_columnSpan="2"
+                tools:listItem="@layout/degree_list_item" />
+
+            <Button
+                android:id="@+id/degree_add_dialog_btn_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:text="افزودن به لیست" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                >
+                <Button
+                    android:id="@+id/step_one_done_btn_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/buy_button_style"
+                    android:text="بعدی"
+                    android:layout_margin="1dp"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</FrameLayout>

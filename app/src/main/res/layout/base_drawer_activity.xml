@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/baseactivity_mother_drawer_layout"
+    >
+    <android.support.design.widget.NavigationView
+        android:id="@+id/baseActivity_nav_view"
+        android:layout_width="250dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="end"
+        android:background="@color/opacity_dark_gradient_color"
+        app:headerLayout="@layout/nav_header"
+        android:layoutDirection="rtl"
+        app:menu="@menu/masterpage_navigtion_drawer_menu"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+    </android.support.design.widget.NavigationView>
+</android.support.v4.widget.DrawerLayout>

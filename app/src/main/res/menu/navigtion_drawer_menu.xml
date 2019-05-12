@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group android:id="@+id/profile_menu_group_id">
+        <item
+            android:id="@+id/profile_changePass_item_id"
+            android:title="تغییر رمز عبور" />
+        <item
+            android:id="@+id/profile_personal_infoChange_item_id"
+            android:title="ویرایش مشخصات فردی" />
+        <item
+            android:id="@+id/profile_personal_infoShow_item_id"
+            android:title="مشاهده مشخصات فردی" />
+        <item
+            android:id="@+id/profile_personal_contactInfo_item_id"
+            android:title="اطلاعات تماس من" />
+        <item
+            android:id="@+id/profile_personal_orders_item_id"
+            android:title="سفارشات من" />
+        <item
+            android:id="@+id/profile_personal_coupanCodes_item_id"
+            android:title="کدهای نسیه/بن کارت ها" />
+    </group>
+
+    <item
+        android:id="@+id/home_nav_ic"
+        android:icon="@drawable/home"
+        android:title="خانه" />
+
+    <item
+        android:id="@+id/department_ic_id"
+        android:icon="@drawable/departments_gray_ic"
+        android:title="دپارتمان" />
+
+    <item
+        android:id="@+id/shopping_nav_ic"
+        android:icon="@drawable/shopping_card"
+        android:title="سبد خرید" />
+
+    <group
+        android:id="@+id/loggedMenuPart"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/fav_nav_ic"
+            android:icon="@drawable/favorite"
+            android:title="لیست مورد علاقه" />
+        <item
+            android:id="@+id/message_nav_ic"
+            android:icon="@drawable/message"
+            android:title="پیام ها" />
+        <item
+            android:id="@+id/orders_nav_ic_id"
+            android:icon="@drawable/orders"
+            android:title="سوابق سفارش" />
+    </group>
+
+    <group android:id="@+id/suggestion">
+        <item
+            android:id="@+id/special_nav_ic"
+            android:title="پیشنهاد های شگفت انگیز" />
+        <item
+            android:id="@+id/most_seller_nav_ic"
+            android:title="پرفروش ترین ها" />
+        <item
+            android:id="@+id/most_seen_nav_ic"
+            android:title="پربازدید ترین ها" />
+        <item
+            android:id="@+id/newest_nav_ic"
+            android:title="جدید ترین ها" />
+        <item
+            android:id="@+id/setting_nav_ic"
+            android:title="تنظیمات" />
+        <item
+            android:id="@+id/about_us_nav_ic"
+            android:title="درباره ی ما" />
+    </group>
+
+    <group
+        android:id="@+id/registeritionMenuPart_id"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/member_register_menu_item_id"
+            android:title="درخواست عضویت" />
+    </group>
+
+    <group
+        android:id="@+id/loggedMenuPart2"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/power_exit_gray_ic_id"
+            android:icon="@drawable/power_gray_ic"
+            android:title="خروج" />
+    </group>
+
+</menu>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    android:background="@color/colorPrimary"
+    android:gravity="center_vertical"
+    android:padding="16dp"
+    android:textStyle="bold"
+    android:text="افزودن اطلاعات تماس"
+    android:textColor="@color/white"
+    android:textDirection="rtl"
+    android:textSize="17.5sp"
+    android:id="@+id/contact_info_add_title_txt_id"
+    />

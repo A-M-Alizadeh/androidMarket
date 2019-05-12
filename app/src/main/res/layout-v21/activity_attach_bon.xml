@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include
+        android:id="@+id/progress_wrapper_id"
+        layout="@layout/global_progressbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/top_part_layout_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:background="#585858"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/standard_margin">
+            <TextView
+                android:id="@+id/mabazar_name_txt_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="الصاق بن"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                android:layout_centerHorizontal="true"
+                />
+
+            <!--<TextView-->
+            <!--android:id="@+id/mabazar_sligan_txt_id"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:layout_below="@+id/mabazar_name_txt_id"-->
+            <!--android:gravity="center"-->
+            <!--android:text="عرضه و تقاضای منصفانه و اعتماد ساز"-->
+            <!--android:textColor="@color/white"-->
+            <!--android:textSize="@dimen/normal_font_size" />-->
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/top_part_layout_id"
+            >
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/top_part_layout_id"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/iden"
+                android:background="@drawable/section_border"
+                android:layout_margin="5dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:id="@+id/group_id"
+                    >
+
+                    <TextView
+                        android:id="@+id/txt_product_group_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:layout_weight="1"
+                        android:layout_margin="5dp"
+                        android:textColor="@color/black"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="شناسه گروه محصولات خاص"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:layout_margin="5dp"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/group_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_below="@id/group_id"
+                    >
+
+                    <TextView
+                        android:id="@+id/txt_product_group_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:layout_weight="1"
+                        android:layout_margin="5dp"
+                        android:textColor="@color/black"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="عنوان گروه محصولات خاص"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:layout_margin="5dp"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/credit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_below="@id/group_title"
+                    >
+
+                    <TextView
+                        android:id="@+id/txt_remain_amount_user"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:layout_weight="1"
+                        android:layout_margin="5dp"
+                        android:textColor="@color/black"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="مانده اعتبار کاربری"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:layout_margin="5dp"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_below="@id/credit"
+                    >
+
+                    <TextView
+                        android:id="@+id/expire_date_credit_card"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="تاریخ انقضا بن هدیه"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:layout_margin="5dp"
+                        />
+                </LinearLayout>
+
+
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/iden1"
+                android:layout_below="@id/iden"
+                android:background="@drawable/section_border"
+                android:layout_margin="5dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:id="@+id/group_id1"
+                    >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="کد بن هدیه"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:layout_margin="5dp"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/group_title1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_below="@id/group_id1"
+                    >
+
+                    <Button
+                        android:id="@+id/btn_check_credit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:text="بررسی"
+                        android:background="@drawable/check_button_border"
+                        android:padding="0dp"
+                        android:textColor="@color/colorAccent"
+                        />
+
+                    <EditText
+                        android:id="@+id/edt_bon_code"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:layout_margin="5dp"
+                        android:inputType="number"
+                        />
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iden1"
+                android:layout_centerInParent="true"
+                android:columnCount="2"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                >
+
+                <Button
+                    android:id="@+id/reject"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="fill_horizontal"
+                    android:text="انصراف"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/cancel_button_border"
+                    android:textColor="@color/depricated_price"
+                    />
+
+                <Button
+                    android:id="@+id/submit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="fill_horizontal"
+                    android:text="تایید"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/submit_button_border"
+                    android:textColor="@color/current_price"
+                    />
+            </GridLayout>
+
+
+
+
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

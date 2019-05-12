@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#585858 </color>
+    <color name="colorPrimaryDark">#323232</color>
+    <color name="colorAccent">#af6b8c</color>
+    <!-- 269111-->
+    <color name="primary_light">#73d0e6</color>
+    <color name="primary_text_black">#212121</color>
+    <color name="secondary_text_gray">#757575</color>
+    <color name="icons_white">#FFFFFF</color>
+    <color name="white">#FFFFFF</color>
+    <color name="divider">#BDBDBD</color>
+    <color name="light_blue">#09A8FA</color>
+    <color name="backgrnd">#f5f5f5</color>
+    <color name="btn_pressed_color">#F7F7F8</color>
+    <color name="star_empty_color">#DADFE1</color>
+    <color name="star_full_color">#F7CA18</color>
+    <color name="depricated_price">#F03434</color>
+    <color name="current_price">#1E824C</color>
+
+    <color name="before_buy_btn_color2">#af6b8c</color>
+    <color name="after_buy_btn_color2">#FFA35379</color>
+
+    <color name="darker_accent_color">#7a224d</color>
+    <color name="light_accent_color">#b77997</color>
+
+    <color name="more_btn_color_blue">#4183D7</color>
+    <color name="black">#000000</color>
+    <color name="theme_comment_darker">#6C7A89</color>
+    <color name="darker_color_primary">#0ba0bc</color>
+    <color name="opacity_color_primary">#4d0fa7c3</color>
+
+    <color name="transparent_backgrnd">#B0000000</color>
+
+    <color name="masterpage_backgrnd">#5b357d</color>
+    <color name="masterpage_btn_backgrnd">#c98c13</color>
+
+
+    <color name="opacity_dark_gradient_color">#e5e4e0f4</color>
+    <color name="dark_gradient_color">#340a5b</color>
+    <color name="average_gradient_color">#5b357d</color>
+    <color name="light_gradient_color">#8f76a6</color>
+    <color name="lightest_gradient_color">#5b8255ab</color>
+
+    <color name="dark_blue">#005b8b</color>
+    <color name="dark_yellow">#e18700</color>
+
+
+    <color name="light_green">#1d00b478</color>
+    <color name="light_red">#1dff0900</color>
+
+    <color name="master_test_color">#b4393b</color>
+    <color name="masterpage_insider_login_part_visible_background">#F8EFBA</color>
+    <color name="masterpage_insider_login_part_gone_background">#e74c3c</color>
+
+
+
+</resources>

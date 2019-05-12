@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/distance_4dp"
+    android:elevation="15dp"
+    android:layoutDirection="rtl"
+    app:cardCornerRadius="@dimen/standard_least_distance"
+    app:cardElevation="@dimen/standard_least_distance"
+    tools:targetApi="lollipop"
+    android:background="@drawable/section_border"
+    >
+
+    <LinearLayout
+        android:id="@+id/bon_layout_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/standard_least_distance">
+
+        <!--//code and type-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="نوع"
+                    android:textSize="@dimen/normal_font_size"
+                    android:textColor="@color/secondary_text_gray"
+                    android:layout_margin="@dimen/distance_4dp"
+                    android:gravity="right"
+                    />
+                <TextView
+                    android:id="@+id/bon_type_txt_id"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="عادی"
+                    android:textSize="@dimen/large_font_size"
+                    android:textStyle="bold"
+                    android:textColor="@color/primary_text_black"
+                    android:layout_margin="@dimen/distance_4dp"
+                    android:layoutDirection="rtl"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="کد بن"
+                    android:textSize="@dimen/normal_font_size"
+                    android:textColor="@color/secondary_text_gray"
+                    android:layout_margin="@dimen/distance_4dp"
+                    android:gravity="right"
+                    />
+                <TextView
+                    android:id="@+id/bon_code_txt_id"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1234567890"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/large_font_size"
+                    android:textColor="@color/primary_text_black"
+                    android:layout_margin="@dimen/distance_4dp"
+                    android:gravity="left"
+                    />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#1E824C"
+            />
+        <!--//code and type-->
+
+        <!--//name and username-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="کلمه کاربری عضو صادر کننده"
+                    android:textSize="@dimen/normal_font_size"
+                    android:textColor="@color/secondary_text_gray"
+                    android:layout_margin="@dimen/distance_4dp"
+                    android:gravity="right"
+                    />
+                <TextView
+                    android:id="@+id/user_username_txt_id"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="09459122188"
+                    android:textSize="@dimen/large_font_size"
+                    android:textStyle="bold"
+                    android:textColor="@color/primary_text_black"
+                    android:layout_margin="@dimen/distance_4dp"
+                    android:gravity="left"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="نام عضو صادر کننده"
+                    android:textSize="@dimen/normal_font_size"
+                    android:textColor="@color/secondary_text_gray"
+                    android:layout_margin="@dimen/distance_4dp"
+                    android:gravity="right"
+                    />
+                <TextView
+                    android:id="@+id/user_name_txt_id"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="مسعود هدایتی"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/large_font_size"
+                    android:textColor="@color/primary_text_black"
+                    android:layout_margin="@dimen/distance_4dp"
+                    android:gravity="left"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+        <!--//name and username-->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#1E824C"
+            />
+        <!--//dates-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="مبلغ صادر شده"
+                    android:textSize="@dimen/normal_font_size"
+                    android:textColor="@color/secondary_text_gray"
+                    android:layout_margin="@dimen/distance_4dp"
+                    android:gravity="right"
+                    />
+                <TextView
+                    android:id="@+id/given_price_txt_id"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="200000"
+                    android:textSize="@dimen/large_font_size"
+                    android:textStyle="bold"
+                    android:textColor="@color/primary_text_black"
+                    android:layout_margin="@dimen/distance_4dp"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="مبلغ مانده"
+                    android:textSize="@dimen/normal_font_size"
+                    android:textColor="@color/secondary_text_gray"
+                    android:layout_margin="@dimen/distance_4dp"
+                    android:gravity="right"
+                    />
+                <TextView
+                    android:id="@+id/total_price_txt_id"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="130000"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/large_font_size"
+                    android:textColor="@color/primary_text_black"
+                    android:layout_margin="@dimen/distance_4dp"
+                    android:gravity="left"
+                    />
+
+            </LinearLayout>
+        </LinearLayout>
+        <!--//dates-->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorAccent"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_below="@+id/date_layout_id"
+            android:layout_marginBottom="@dimen/standard_least_distance"
+            android:layout_marginTop="5dp"
+            >
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:id="@+id/visit_transaction_bon_btn_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/standard_least_distance"
+                android:layout_marginLeft="@dimen/standard_least_distance"
+                android:gravity="center"
+                android:orientation="horizontal"
+                >
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/review_time_ic" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/standard_least_distance"
+                    android:text="شرح"
+                    android:textColor="@color/primary_text_black"
+                    android:textSize="@dimen/small_font_size" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

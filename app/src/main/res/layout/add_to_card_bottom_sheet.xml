@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layoutDirection="rtl"
+    android:id="@+id/bottom_sheet_mother_layout_id"
+    >
+
+    <TextView
+        android:id="@+id/product_name_txt_id"
+        android:layout_margin="@dimen/default_margin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="2"
+        android:text="ساعت مچی عقربه ای مردانه کاسیو جی شاک مدل GST-210B-1ADR"
+        android:textSize="@dimen/large_font_size"
+        android:textColor="@color/primary_text_black"
+        android:lineSpacingExtra="8dp"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="2"
+        android:text="انتخاب رنگ"
+        android:textSize="@dimen/large_font_size"
+        android:textColor="@color/secondary_text_gray"
+        android:layout_marginLeft="@dimen/default_margin"
+        android:layout_marginRight="@dimen/default_margin"
+        android:layout_marginTop="@dimen/standard_margin"
+        android:layout_marginBottom="@dimen/standard_margin"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/default_margin"
+        android:layout_marginRight="@dimen/default_margin"
+        android:layout_marginTop="@dimen/standard_margin"
+        android:layout_marginBottom="@dimen/standard_margin"
+        >
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:background="@drawable/circle_bg"
+            android:backgroundTint="#ff0000FF"
+            android:layout_marginLeft="@dimen/standard_margin"
+            />
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:background="@drawable/circle_bg"
+            android:backgroundTint="@color/primary_text_black"
+            android:layout_marginLeft="@dimen/standard_margin"
+            />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="2"
+        android:text="انتخاب عرضه کننده و ضمانت نامه"
+        android:textSize="@dimen/large_font_size"
+        android:textColor="@color/secondary_text_gray"
+        android:layout_marginLeft="@dimen/default_margin"
+        android:layout_marginRight="@dimen/default_margin"
+        android:layout_marginTop="@dimen/standard_margin"
+        android:layout_marginBottom="@dimen/standard_margin"
+        />
+
+    <Spinner
+        android:id="@+id/presenter_spinner_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/checkout_reciever_mibilenum_et_id"
+        android:layout_margin="@dimen/default_margin"
+        android:background="@drawable/spinner_border"
+        android:paddingLeft="@dimen/default_margin"
+        android:paddingRight="@dimen/default_margin"
+        android:entries="@array/presenter_names"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"
+        android:layout_marginRight="@dimen/default_margin"
+        android:layout_marginLeft="@dimen/default_margin"
+        />
+
+    <Spinner
+        android:id="@+id/guaranty_spinner_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/checkout_reciever_mibilenum_et_id"
+        android:layout_margin="@dimen/default_margin"
+        android:background="@drawable/spinner_border"
+        android:paddingLeft="@dimen/default_margin"
+        android:paddingRight="@dimen/default_margin"
+        android:entries="@array/presenter_names"/>
+
+    <Button
+        android:id="@+id/checkout_edit_address_btn_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/standard_margin"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/buy_button_style"
+        android:foreground="?attr/selectableItemBackground"
+        android:text="فیلتر"
+        android:textColor="@color/white"
+        android:textSize="@dimen/normal_font_size" />
+    <!--<Spinner-->
+        <!--android:id="@+id/presenter_spinner"-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:drawSelectorOnTop="true"-->
+        <!--android:entries="@array/presenter_names"-->
+        <!--/>-->
+
+    <!--<Spinner-->
+        <!--android:layout_margin="@dimen/default_margin"-->
+        <!--android:id="@+id/guaranty_spinner"-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:drawSelectorOnTop="true"-->
+        <!--android:entries="@array/presenter_names"-->
+        <!--/>-->
+    <!--<RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_margin="@dimen/standard_margin"-->
+        <!--android:orientation="vertical"-->
+        <!--&gt;-->
+        <!--<RadioButton android:id="@+id/radio_pirates"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:textSize="@dimen/small_font_size"-->
+            <!--android:checked="true"-->
+            <!--android:text="گارانتی 12 ماهه لایف سرویس" />-->
+        <!--<RadioButton android:id="@+id/radio_ninjas"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:textSize="@dimen/small_font_size"-->
+            <!--android:text="گارانتی مادام العمر سام" />-->
+    <!--</RadioGroup>-->
+
+
+    <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:maxLines="2"-->
+        <!--android:text="انتخاب عرضه کننده"-->
+        <!--android:textSize="@dimen/large_font_size"-->
+        <!--android:textColor="@color/secondary_text_gray"-->
+        <!--android:layout_marginLeft="@dimen/default_margin"-->
+        <!--android:layout_marginRight="@dimen/default_margin"-->
+        <!--android:layout_marginTop="@dimen/standard_margin"-->
+        <!--android:layout_marginBottom="@dimen/standard_margin"-->
+        <!--/>-->
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"/>
+
+    <RelativeLayout
+        android:layout_marginLeft="@dimen/default_margin"
+        android:layout_marginRight="@dimen/default_margin"
+        android:layout_marginTop="@dimen/standard_margin"
+        android:layout_marginBottom="@dimen/standard_margin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/price_title_bsh_id"
+            android:maxLines="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="قیمت"
+            android:layout_alignParentRight="true"
+            android:textSize="@dimen/normal_font_size"
+            android:textColor="@color/secondary_text_gray"
+            android:layout_margin="@dimen/standard_margin"
+            />
+        <TextView
+            android:id="@+id/price_bsh_id"
+            android:maxLines="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="562000 تومان"
+            android:layout_alignParentLeft="true"
+            android:textSize="@dimen/normal_font_size"
+            android:textColor="@color/secondary_text_gray"
+            android:layout_margin="@dimen/standard_margin"
+            />
+        <TextView
+            android:id="@+id/bargin_title_bsh_id"
+            android:maxLines="1"
+            android:layout_below="@+id/price_title_bsh_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="تخفیف"
+            android:layout_alignParentRight="true"
+            android:textSize="@dimen/normal_font_size"
+            android:textColor="@color/secondary_text_gray"
+            android:layout_margin="@dimen/standard_margin"
+            />
+        <TextView
+            android:id="@+id/bargin_bsh_id"
+            android:maxLines="1"
+            android:layout_below="@+id/price_bsh_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="59000 تومان"
+            android:layout_alignParentLeft="true"
+            android:textSize="@dimen/normal_font_size"
+            android:textColor="@color/secondary_text_gray"
+            android:layout_margin="@dimen/standard_margin"
+            />
+        <TextView
+            android:id="@+id/pay_title_bsh_id"
+            android:maxLines="1"
+            android:layout_below="@+id/bargin_title_bsh_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="مبلغ قابل پرداخت"
+            android:layout_alignParentRight="true"
+            android:textSize="@dimen/large_font_size"
+            android:textColor="@color/primary_text_black"
+            android:layout_margin="@dimen/standard_margin"
+            />
+        <TextView
+            android:id="@+id/pay_bsh_id"
+            android:maxLines="1"
+            android:layout_below="@+id/bargin_bsh_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="503000 تومان"
+            android:layout_alignParentLeft="true"
+            android:textSize="@dimen/large_font_size"
+            android:textColor="@color/primary_text_black"
+            android:layout_margin="@dimen/standard_margin"
+            />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/but_bsh_bottom_button_layout_id"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/before_buy_btn_color2"
+        android:foreground="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/shopping_card_white"
+            android:layout_margin="2dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="افزودن به سبد خرید"
+            android:textColor="@color/white"
+            android:layout_margin="2dp"
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>

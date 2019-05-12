@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="@dimen/standard_margin"
+    app:cardElevation="@dimen/standard_margin"
+    android:background="@drawable/back_bitmap">
+
+
+    <!--//login part inside-->
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/login_part_layout_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/login_name_tiet_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/distance_4dp"
+            android:layout_marginLeft="@dimen/distance_4dp"
+            android:layout_marginRight="@dimen/distance_4dp"
+            android:layout_marginTop="@dimen/distance_4dp">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/login_tietusername_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableRight="@drawable/username_gray_ic"
+                android:hint="نام کاربری"
+                android:inputType="text"
+                android:maxLength="40"
+                android:textSize="@dimen/small_font_size" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/login_pass_tiet_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/distance_4dp"
+            android:layout_marginLeft="@dimen/distance_4dp"
+            android:layout_marginRight="@dimen/distance_4dp"
+            android:layout_marginTop="@dimen/distance_4dp">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/login_tietpassword_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableRight="@drawable/password_lock_gray_ic"
+                android:hint="رمز عبور"
+                android:inputType="textPassword"
+                android:maxLength="40"
+                android:textSize="@dimen/small_font_size" />
+        </android.support.design.widget.TextInputLayout>
+        <!--//buy_btn-->
+        <Button
+            android:id="@+id/login_btn_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/distance_4dp"
+            android:layout_marginLeft="@dimen/distance_4dp"
+            android:layout_marginRight="@dimen/distance_4dp"
+            android:layout_marginTop="@dimen/distance_4dp"
+            android:layout_weight="1"
+            android:background="@drawable/buy_button_style"
+            android:foreground="?attr/selectableItemBackground"
+            android:text="ورود"
+            android:textColor="@color/white"
+            android:textSize="@dimen/normal_font_size" />
+
+        <Button
+            android:id="@+id/signup_btn_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/distance_4dp"
+            android:layout_marginLeft="@dimen/distance_4dp"
+            android:layout_marginRight="@dimen/distance_4dp"
+            android:layout_marginTop="@dimen/distance_4dp"
+            android:layout_weight="1"
+            android:background="@drawable/buy_button_style"
+            android:foreground="?attr/selectableItemBackground"
+            android:text="ثبت نام"
+            android:textColor="@color/white"
+            android:textSize="@dimen/normal_font_size" />
+
+        <Button
+            android:id="@+id/requests_btn_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/distance_4dp"
+            android:layout_marginLeft="@dimen/distance_4dp"
+            android:layout_marginRight="@dimen/distance_4dp"
+            android:layout_marginTop="@dimen/distance_4dp"
+            android:layout_weight="1"
+            android:background="@drawable/buy_button_style"
+            android:foreground="?attr/selectableItemBackground"
+            android:text="درخواست ها"
+            android:textColor="@color/white"
+            android:textSize="@dimen/normal_font_size" />
+
+    </LinearLayout>
+    <!--//login part inside-->
+
+
+</LinearLayout>
