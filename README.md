@@ -19,8 +19,8 @@ The UI was designed and implemented by myself, ensuring an intuitive and modern 
 
 | Product List | Product Detail | Checkout Screen |
 |--------------|----------------|-----------------|
-| ![Product List](./screenshots/product_list.png) | ![Product Detail](./screenshots/product_detail.png) | ![Checkout](./screenshots/checkout.png) |
-| ![Shopping Cart](./screenshots/cart.png) | ![Order Confirmation](./screenshots/order_confirmation.png) | |
+| ![Product List](mbazar-photo/bon1.png) | ![Product Detail](mbazar-photo/departmentpage.png) | ![Checkout](mbazar-photo/homepage.png) |
+| ![Shopping Cart](mbazar-photo/bon_request.jpg) | ![Order Confirmation](mbazar-photo/carrier.jpg) | ![Order Confirmation](mbazar-photo/payment2.jpg)|
 
 ## 📲 Installation
 1. Clone the repository:
