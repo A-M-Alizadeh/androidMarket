@@ -17,6 +17,7 @@ The UI was designed and implemented by myself, ensuring an intuitive and modern 
 
 ## 📸 Screenshots
 
+| Application Screen | Application Screen | Application Screen |
 |--------------|----------------|-----------------|
 | ![Product List](mbazar-photo/bon1.png) | ![Product Detail](mbazar-photo/departmentpage.png) | ![Checkout](mbazar-photo/homepage.png) |
 | ![Shopping Cart](mbazar-photo/bon_request.jpg) | ![Order Confirmation](mbazar-photo/carrier.jpg) | ![Order Confirmation](mbazar-photo/payment2.jpg)|
